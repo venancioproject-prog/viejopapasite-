@@ -21,11 +21,11 @@
       theme: {
         extend: {
           colors: {
-            "background": "#FAF6F0",
-            "cream-linen": "#FDF8F0",
+            "background": "#FFFFFF",
+            "cream-linen": "#FFFFFF",
             "surface-pure": "#FFFFFF",
-            "surface-low": "#F5EFE6",
-            "surface-subtle": "#EFE7DA",
+            "surface-low": "#FAFAFA",
+            "surface-subtle": "#F5F5F5",
             "charcoal-main": "#1A1A1A",
             "charcoal-soft": "#2B2B2B",
             "charcoal-muted": "#57524E",
@@ -90,13 +90,13 @@
     </div>
 
     <!-- MOBILE MENU DROPDOWN -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-cream-linen border-b border-gold-border px-6 py-5 space-y-4 shadow-xl">
-      <a href="#inicio" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">Início</a>
-      <a href="#sobre" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">Sobre Nós</a>
-      <a href="#destaques" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">Destaques da Brasa</a>
-      <a href="#cardapio" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">Cardápio do Parrillero</a>
-      <a href="#cava" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">Cava & Carta de Vinhos</a>
-      <a href="#ambientes" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-[#EFE7DA]">O Espaço & Mirador</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gold-border px-6 py-5 space-y-4 shadow-xl">
+      <a href="#inicio" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Início</a>
+      <a href="#sobre" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Sobre Nós</a>
+      <a href="#destaques" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Destaques da Brasa</a>
+      <a href="#cardapio" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Cardápio do Parrillero</a>
+      <a href="#cava" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Cava & Carta de Vinhos</a>
+      <a href="#ambientes" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">O Espaço & Mirador</a>
       <a href="#reservas" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-flame-wine py-2">Reservas VIP</a>
     </div>
   </header>
@@ -104,13 +104,13 @@
   <main class="w-full pt-20" id="inicio">
 
     <!-- 1. HERO BANNER COM VÍDEO DO FOGO / BRASA VIVA & IMAGEM DE FUNDO -->
-    <section class="relative w-full overflow-hidden bg-[#FAF6F0] border-b border-gold-border min-h-[85vh] flex items-center">
+    <section class="relative w-full overflow-hidden bg-white border-b border-gold-border min-h-[85vh] flex items-center">
       
       <!-- Video Background com Parrilla e Fogo Real -->
       <div class="hero-video-container">
         <video autoplay muted loop playsinline poster="assets/images/hero-bg.jpg" class="hero-video">
+          <source src="assets/videos/institucional-viejo-papa.mp4" type="video/mp4">
           <source src="assets/videos/fuegos-parrilla.mp4" type="video/mp4">
-          <source src="assets/videos/fuegos-parrilla.mov" type="video/quicktime">
         </video>
         <div class="hero-overlay"></div>
       </div>
@@ -152,7 +152,7 @@
         <!-- 4 SELOS DE PRESTÍGIO -->
         <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 bg-surface-pure/95 backdrop-blur-md p-6 border border-gold-border shadow-[0_10px_30px_rgba(201,168,76,0.12)]">
           <div class="flex items-center gap-3 p-2">
-            <div class="w-11 h-11 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+            <div class="w-11 h-11 bg-white border border-gold-border flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-aged-gold-dark text-[24px]">timer</span>
             </div>
             <div class="flex flex-col">
@@ -162,7 +162,7 @@
           </div>
 
           <div class="flex items-center gap-3 p-2">
-            <div class="w-11 h-11 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+            <div class="w-11 h-11 bg-white border border-gold-border flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-aged-gold-dark text-[24px]">local_fire_department</span>
             </div>
             <div class="flex flex-col">
@@ -172,7 +172,7 @@
           </div>
 
           <div class="flex items-center gap-3 p-2">
-            <div class="w-11 h-11 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+            <div class="w-11 h-11 bg-white border border-gold-border flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-aged-gold-dark text-[24px]">wine_bar</span>
             </div>
             <div class="flex flex-col">
@@ -182,7 +182,7 @@
           </div>
 
           <div class="flex items-center gap-3 p-2">
-            <div class="w-11 h-11 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+            <div class="w-11 h-11 bg-white border border-gold-border flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-aged-gold-dark text-[24px]">outdoor_grill</span>
             </div>
             <div class="flex flex-col">
@@ -196,7 +196,7 @@
     </section>
 
     <!-- 2. INSTITUCIONAL: A TRADIÇÃO DO FOGO / A POESIA DAS BRASAS -->
-    <section class="w-full bg-cream-linen py-24 border-b border-gold-border relative" id="sobre">
+    <section class="w-full bg-white py-24 border-b border-gold-border relative" id="sobre">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
@@ -274,7 +274,7 @@
     </section>
 
     <!-- 3. DESTAQUES DA BRASA (3 CARDS COM FOTOS REAIS DO RESTAURANTE) -->
-    <section class="w-full bg-[#FAF6F0] py-24 border-b border-gold-border relative" id="destaques">
+    <section class="w-full bg-white py-24 border-b border-gold-border relative" id="destaques">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -292,7 +292,7 @@
           
           <!-- CARD 1: Paleta de Cordeiro Pampeana -->
           <article class="group flex flex-col bg-surface-pure border border-gold-border shadow-[0_8px_24px_rgba(201,168,76,0.12)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
-            <div class="relative w-full aspect-[4/3] overflow-hidden bg-cream-linen border-b border-gold-border">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-white border-b border-gold-border">
               <img src="assets/images/destaque-cordeiro.jpg" alt="Paleta de Cordeiro Pampeana braseada lentamente com ervas frescas e papas souflé" class="w-full h-full object-cover img-zoom gallery-zoom" data-full="assets/images/destaque-cordeiro.jpg">
               <div class="absolute top-3 left-3">
                 <span class="inline-block px-3 py-1 bg-flame-wine text-white font-geom font-bold text-[9px] tracking-[0.2em] uppercase shadow-sm">
@@ -310,7 +310,7 @@
                   Assada lentamente por 8 horas sobre brasas de laranjeira, acompanhada de alho confitado, molho de hortelã fresca, farofa da casa e papas souflé douradas.
                 </p>
               </div>
-              <div class="bg-cream-linen border border-gold-border p-3 flex flex-col gap-1">
+              <div class="bg-white border border-gold-border p-3 flex flex-col gap-1">
                 <span class="font-geom font-bold text-[10px] text-aged-gold-dark uppercase tracking-wider flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-[15px]">wine_bar</span> Harmonização Sugerida
                 </span>
@@ -326,7 +326,7 @@
                 CORTE ASSINATURA DA CASA
               </span>
             </div>
-            <div class="relative w-full aspect-[4/3] overflow-hidden bg-cream-linen border-b border-gold-border">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-white border-b border-gold-border">
               <img src="assets/images/destaque-prime-rib.jpg" alt="Bife de Ancho Premium Dry Aged selado na parrilla" class="w-full h-full object-cover img-zoom gallery-zoom" data-full="assets/images/destaque-prime-rib.jpg">
               <div class="absolute top-4 right-3">
                 <span class="inline-block px-3 py-1 bg-surface-pure text-aged-gold-dark border border-gold-border font-geom font-bold text-[9px] tracking-[0.2em] uppercase shadow-sm">
@@ -334,7 +334,7 @@
                 </span>
               </div>
             </div>
-            <div class="p-7 flex flex-col flex-1 justify-between gap-6 bg-[#FCFAF7]">
+            <div class="p-7 flex flex-col flex-1 justify-between gap-6 bg-white">
               <div>
                 <div class="flex items-baseline justify-between gap-2 mb-2">
                   <h3 class="font-geom font-black text-2xl text-charcoal-main uppercase tracking-wider">Bife de Ancho Grand Reserve</h3>
@@ -355,7 +355,7 @@
 
           <!-- CARD 3: Galeto Jovem na Brasa -->
           <article class="group flex flex-col bg-surface-pure border border-gold-border shadow-[0_8px_24px_rgba(201,168,76,0.12)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
-            <div class="relative w-full aspect-[4/3] overflow-hidden bg-cream-linen border-b border-gold-border">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-white border-b border-gold-border">
               <img src="assets/images/destaque-galeto.jpg" alt="Galeto na Brasa com legumes tostados e chimichurri fresco" class="w-full h-full object-cover img-zoom gallery-zoom" data-full="assets/images/destaque-galeto.jpg">
               <div class="absolute top-3 left-3">
                 <span class="inline-block px-3 py-1 bg-flame-wine text-white font-geom font-bold text-[9px] tracking-[0.2em] uppercase shadow-sm">
@@ -373,7 +373,7 @@
                   Galeto marinado por 24 horas em vinho branco aromático, sálvia e especiarias, assado lentamente até a pele dourada pururuca, servido com legumes braseados.
                 </p>
               </div>
-              <div class="bg-cream-linen border border-gold-border p-3 flex flex-col gap-1">
+              <div class="bg-white border border-gold-border p-3 flex flex-col gap-1">
                 <span class="font-geom font-bold text-[10px] text-aged-gold-dark uppercase tracking-wider flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-[15px]">wine_bar</span> Harmonização Sugerida
                 </span>
@@ -388,7 +388,7 @@
     </section>
 
     <!-- 4. CARDÁPIO COMPLETO DO MESTRE PARRILLERO & CAVA VIEJO PAPA -->
-    <section class="w-full bg-cream-linen py-24 border-b border-gold-border" id="cardapio">
+    <section class="w-full bg-white py-24 border-b border-gold-border" id="cardapio">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-12">
@@ -434,7 +434,7 @@
               <div class="space-y-6">
                 
                 <!-- Item com Foto: Empanadas -->
-                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-[#F0EAE1]">
+                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-gray-100">
                   <img src="assets/images/prato-empanadas.jpg" alt="Empanadas Tradicionais na Brasa" class="w-24 h-24 sm:w-28 sm:h-28 object-cover border border-gold-border shrink-0 gallery-zoom" data-full="assets/images/prato-empanadas.jpg">
                   <div class="flex-1">
                     <div class="flex justify-between items-baseline gap-2">
@@ -448,7 +448,7 @@
                 </div>
 
                 <!-- Item com Foto: Panceta / Torresmo -->
-                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-[#F0EAE1]">
+                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-gray-100">
                   <img src="assets/images/prato-panceta.jpg" alt="Panceta Pururuca na Brasa com Limão Siciliano" class="w-24 h-24 sm:w-28 sm:h-28 object-cover border border-gold-border shrink-0 gallery-zoom" data-full="assets/images/prato-panceta.jpg">
                   <div class="flex-1">
                     <div class="flex justify-between items-baseline gap-2">
@@ -488,7 +488,7 @@
               <div class="space-y-6">
                 
                 <!-- Asado de Tiras -->
-                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-[#F0EAE1]">
+                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-gray-100">
                   <img src="assets/images/prato-asado-tiras.jpg" alt="Asado de Tiras Angus Grand Reserve" class="w-24 h-24 sm:w-28 sm:h-28 object-cover border border-gold-border shrink-0 gallery-zoom" data-full="assets/images/prato-asado-tiras.jpg">
                   <div class="flex-1">
                     <div class="flex items-center justify-between gap-2">
@@ -505,7 +505,7 @@
                 </div>
 
                 <!-- Bife de Chorizo Fatiado -->
-                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-[#F0EAE1]">
+                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start pb-5 border-b border-gray-100">
                   <img src="assets/images/destaque-bife-fatiado.jpg" alt="Bife de Chorizo Angus Fatiado ao Ponto" class="w-24 h-24 sm:w-28 sm:h-28 object-cover border border-gold-border shrink-0 gallery-zoom" data-full="assets/images/destaque-bife-fatiado.jpg">
                   <div class="flex-1">
                     <div class="flex justify-between items-baseline gap-2">
@@ -545,7 +545,7 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <!-- Parrillada de Legumes -->
-                <div class="bg-cream-linen p-4 border border-gold-border flex flex-col gap-3">
+                <div class="bg-white p-4 border border-gold-border flex flex-col gap-3">
                   <img src="assets/images/prato-legumes.jpg" alt="Parrillada de Legumes Braseados" class="w-full h-36 object-cover border border-gold-border gallery-zoom" data-full="assets/images/prato-legumes.jpg">
                   <div class="flex justify-between items-baseline">
                     <h5 class="font-geom font-bold text-sm uppercase text-charcoal-main">Parrillada de Legumes</h5>
@@ -555,7 +555,7 @@
                 </div>
 
                 <!-- Creme de Espinafre -->
-                <div class="bg-cream-linen p-4 border border-gold-border flex flex-col gap-3">
+                <div class="bg-white p-4 border border-gold-border flex flex-col gap-3">
                   <img src="assets/images/prato-creme-espinafre.jpg" alt="Creme de Espinafre Gratinado com Queijo Curado" class="w-full h-36 object-cover border border-gold-border gallery-zoom" data-full="assets/images/prato-creme-espinafre.jpg">
                   <div class="flex justify-between items-baseline">
                     <h5 class="font-geom font-bold text-sm uppercase text-charcoal-main">Creme de Espinafre Gratinado</h5>
@@ -565,7 +565,7 @@
                 </div>
 
                 <!-- Risoto da Brasa -->
-                <div class="bg-cream-linen p-4 border border-gold-border flex flex-col gap-3">
+                <div class="bg-white p-4 border border-gold-border flex flex-col gap-3">
                   <img src="assets/images/prato-risoto.jpg" alt="Risoto Braseado com Tomates Defumados" class="w-full h-36 object-cover border border-gold-border gallery-zoom" data-full="assets/images/prato-risoto.jpg">
                   <div class="flex justify-between items-baseline">
                     <h5 class="font-geom font-bold text-sm uppercase text-charcoal-main">Risoto de Tomates Defumados</h5>
@@ -575,7 +575,7 @@
                 </div>
 
                 <!-- Fettuccine con Chorizo -->
-                <div class="bg-cream-linen p-4 border border-gold-border flex flex-col gap-3">
+                <div class="bg-white p-4 border border-gold-border flex flex-col gap-3">
                   <img src="assets/images/prato-fettuccine.jpg" alt="Fettuccine com Creme Branco e Chorizo" class="w-full h-36 object-cover border border-gold-border gallery-zoom" data-full="assets/images/prato-fettuccine.jpg">
                   <div class="flex justify-between items-baseline">
                     <h5 class="font-geom font-bold text-sm uppercase text-charcoal-main">Fettuccine ao Molho Branco & Chorizo</h5>
@@ -611,7 +611,7 @@
               <!-- Lista de Rótulos -->
               <div class="space-y-4 mb-6">
                 
-                <div class="pb-3 border-b border-[#F0EAE1]">
+                <div class="pb-3 border-b border-gray-100">
                   <div class="flex items-baseline justify-between gap-1">
                     <h4 class="font-geom font-bold text-[14px] text-charcoal-main uppercase">Almaviva Epu</h4>
                     <span class="font-geom font-black text-[15px] text-aged-gold-dark">R$ 1.030</span>
@@ -622,7 +622,7 @@
                   </div>
                 </div>
 
-                <div class="pb-3 border-b border-[#F0EAE1]">
+                <div class="pb-3 border-b border-gray-100">
                   <div class="flex items-baseline justify-between gap-1">
                     <h4 class="font-geom font-bold text-[14px] text-charcoal-main uppercase">Baronesa P. Gran Reserva</h4>
                     <span class="font-geom font-black text-[15px] text-aged-gold-dark">R$ 940</span>
@@ -633,7 +633,7 @@
                   </div>
                 </div>
 
-                <div class="pb-3 border-b border-[#F0EAE1]">
+                <div class="pb-3 border-b border-gray-100">
                   <div class="flex items-baseline justify-between gap-1">
                     <h4 class="font-geom font-bold text-[14px] text-charcoal-main uppercase">Marqués de Murrieta Reserva</h4>
                     <span class="font-geom font-black text-[15px] text-aged-gold-dark">R$ 590</span>
@@ -644,7 +644,7 @@
                   </div>
                 </div>
 
-                <div class="pb-3 border-b border-[#F0EAE1]">
+                <div class="pb-3 border-b border-gray-100">
                   <div class="flex items-baseline justify-between gap-1">
                     <h4 class="font-geom font-bold text-[14px] text-charcoal-main uppercase">Adobe Reserva Orgânico</h4>
                     <span class="font-geom font-black text-[15px] text-aged-gold-dark">R$ 145</span>
@@ -669,7 +669,7 @@
               </div>
 
               <!-- FOTO AUTÊNTICA DA CAVA / VINHEDO -->
-              <div class="p-3 bg-cream-linen border border-gold-border text-center overflow-hidden">
+              <div class="p-3 bg-white border border-gold-border text-center overflow-hidden">
                 <span class="font-geom font-bold text-[10px] uppercase tracking-[0.2em] text-charcoal-main block mb-2">
                   CARTA DE VINHOS & MIRADOR
                 </span>
@@ -688,7 +688,7 @@
     </section>
 
     <!-- 5. O ESPAÇO, ARQUITETURA & MIRADOR (GALERIA DE FOTOS REAIS) -->
-    <section class="w-full bg-[#FAF6F0] py-24 border-b border-gold-border" id="ambientes">
+    <section class="w-full bg-white py-24 border-b border-gold-border" id="ambientes">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -775,7 +775,7 @@
     </section>
 
     <!-- 6. SALÕES PRIVATIVOS & CONCIERGE VIP (MÓDULO DE RESERVAS) -->
-    <section class="w-full bg-cream-linen py-24 border-b border-gold-border" id="reservas">
+    <section class="w-full bg-white py-24 border-b border-gold-border" id="reservas">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
@@ -795,7 +795,7 @@
             <div class="space-y-4 bg-surface-pure border border-gold-border p-6 shadow-sm">
               
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+                <div class="w-10 h-10 bg-white border border-gold-border flex items-center justify-center shrink-0">
                   <span class="material-symbols-outlined text-aged-gold-dark text-[22px]">directions_car</span>
                 </div>
                 <div class="flex flex-col">
@@ -805,7 +805,7 @@
               </div>
 
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+                <div class="w-10 h-10 bg-white border border-gold-border flex items-center justify-center shrink-0">
                   <span class="material-symbols-outlined text-aged-gold-dark text-[22px]">checkroom</span>
                 </div>
                 <div class="flex flex-col">
@@ -815,7 +815,7 @@
               </div>
 
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-cream-linen border border-gold-border flex items-center justify-center shrink-0">
+                <div class="w-10 h-10 bg-white border border-gold-border flex items-center justify-center shrink-0">
                   <span class="material-symbols-outlined text-aged-gold-dark text-[22px]">shield_person</span>
                 </div>
                 <div class="flex flex-col">
@@ -839,18 +839,18 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div class="flex flex-col gap-1.5">
                   <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="nome">Nome do Titular *</label>
-                  <input class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="nome" placeholder="Ex.: Leonardo Silva" required type="text">
+                  <input class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="nome" placeholder="Ex.: Leonardo Silva" required type="text">
                 </div>
                 <div class="flex flex-col gap-1.5">
                   <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="telefone">WhatsApp com DDD *</label>
-                  <input class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="telefone" placeholder="(11) 99999-0000" required type="tel">
+                  <input class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="telefone" placeholder="(11) 99999-0000" required type="tel">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="flex flex-col gap-1.5">
                   <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="convidados">Convidados *</label>
-                  <select class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="convidados">
+                  <select class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="convidados">
                     <option value="2 Pessoas (Mesa Íntima)">2 Pessoas (Íntima)</option>
                     <option value="4 Pessoas" selected>4 Pessoas</option>
                     <option value="6 Pessoas">6 Pessoas</option>
@@ -861,11 +861,11 @@
                 </div>
                 <div class="flex flex-col gap-1.5">
                   <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="data">Data Desejada *</label>
-                  <input class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="data" required type="date">
+                  <input class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="data" required type="date">
                 </div>
                 <div class="flex flex-col gap-1.5">
                   <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="horario">Horário *</label>
-                  <select class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="horario">
+                  <select class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-geom text-xs focus:outline-none focus:border-flame-wine focus:bg-white" id="horario">
                     <option value="12h30 (Almoço)">12h30 (Almoço)</option>
                     <option value="13h30 (Almoço)">13h30 (Almoço)</option>
                     <option value="19h30">19h30</option>
@@ -878,7 +878,7 @@
 
               <div class="flex flex-col gap-1.5">
                 <label class="font-geom font-bold text-[11px] text-charcoal-main uppercase tracking-wider" for="obs">Preferências Especiais / Ocasião / Vinho Específico</label>
-                <textarea class="w-full bg-[#FAF6F0] border border-gold-border px-4 py-3 text-charcoal-main font-editorial italic text-sm placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="obs" placeholder="Ex.: Aniversário, mesa próxima à varanda com vista ou pré-reserva de rótulos raros..." rows="3"></textarea>
+                <textarea class="w-full bg-white border border-gold-border px-4 py-3 text-charcoal-main font-editorial italic text-sm placeholder:text-charcoal-muted/50 focus:outline-none focus:border-flame-wine focus:bg-white" id="obs" placeholder="Ex.: Aniversário, mesa próxima à varanda com vista ou pré-reserva de rótulos raros..." rows="3"></textarea>
               </div>
 
               <div class="pt-3 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -905,7 +905,7 @@
                   <span class="material-symbols-outlined text-[18px]">chat</span>
                   Abrir WhatsApp Agora
                 </a>
-                <button id="close-modal-btn" class="px-5 py-3 bg-[#FAF6F0] border border-gold-border font-geom font-bold text-xs uppercase text-charcoal-main hover:bg-white transition-all">
+                <button id="close-modal-btn" class="px-5 py-3 bg-white border border-gold-border font-geom font-bold text-xs uppercase text-charcoal-main hover:bg-white transition-all">
                   Concluir
                 </button>
               </div>
