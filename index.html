@@ -322,121 +322,691 @@
       </div>
     </section>
 
-    <!-- 4. SEÇÃO CARTA DE VINHOS COMPLETA COM IMAGENS TRANSPARENTES -->
+    <!-- 4. SEÇÃO CARTA DE VINHOS COMPLETA COM TODOS OS 30 RÓTULOS (CHILE & ESPANHA) -->
     <section id="cava" class="py-20 lg:py-28 bg-white border-b border-gold-border">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-center max-w-3xl mx-auto mb-14">
           <div class="inline-flex items-center gap-2 border-b border-aged-gold pb-1 mb-3">
             <span class="material-symbols-outlined text-flame-wine text-[20px]">wine_bar</span>
-            <span class="font-geom font-normal text-xs tracking-[0.25em] uppercase text-flame-wine">CARTA EXCLUSIVA &amp; RÓTULOS SELECIONADOS</span>
+            <span class="font-geom font-normal text-xs tracking-[0.25em] uppercase text-flame-wine">CARTA EXCLUSIVA • 30 RÓTULOS SELECIONADOS</span>
           </div>
           <h2 class="font-geom font-light text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-[0.14em]">
             A CAVA DO <span class="text-flame-wine">VIEJO PAPA</span>
           </h2>
-          <p class="font-geom text-base text-charcoal-muted mt-3">
-            Uma adega subterrânea climatizada com os mais aclamados rótulos do Uruguai, Chile, Argentina e Velho Mundo para a harmonização perfeita.
+          <div class="h-0.5 w-16 bg-aged-gold mx-auto my-4"></div>
+          <p class="font-geom text-base text-charcoal-muted font-light">
+            Explore nossa carta completa de vinhos finos internacionais com curadoria exclusiva de terroirs do Chile e da Espanha, harmonizados com a alta gastronomia uruguaia.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <!-- Vinho 1: Almaviva EPU -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/almaviva-epu.png" alt="Vinho Almaviva EPU" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
-            </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">Valle del Maipo • Chile</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Almaviva EPU</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              Ícone da alta enologia franco-chilena. Blend sofisticado dominado por Cabernet Sauvignon com notas de cassis, cedro e taninos aveludados.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Tomahawk</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 1.030</span>
+        <!-- Abas de Filtro de Vinhos -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-12" id="wine-tabs">
+          <button class="wine-tab-btn active px-5 py-2.5 border border-gold-border bg-flame-wine text-white font-geom text-xs uppercase tracking-[0.18em] transition-all" data-filter="todos">
+            Todos os Vinhos (30)
+          </button>
+          <button class="wine-tab-btn px-5 py-2.5 border border-gold-border bg-white text-charcoal-main hover:bg-gold-border/20 font-geom text-xs uppercase tracking-[0.18em] transition-all" data-filter="chile">
+            Chile (22 Rótulos)
+          </button>
+          <button class="wine-tab-btn px-5 py-2.5 border border-gold-border bg-white text-charcoal-main hover:bg-gold-border/20 font-geom text-xs uppercase tracking-[0.18em] transition-all" data-filter="espanha">
+            Espanha (8 Rótulos)
+          </button>
+        </div>
+
+        <!-- Grid de Vinhos do Chile -->
+        <div class="mb-14 wine-country-block" id="wine-block-chile">
+          <div class="flex items-center gap-3 pb-3 mb-8 border-b-2 border-gold-border">
+            <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">public</span>
+            <div>
+              <h3 class="font-geom font-normal text-xl tracking-[0.16em] uppercase text-charcoal-main">Vinhos do Chile</h3>
+              <p class="font-geom font-light text-xs text-charcoal-muted mt-0.5 uppercase">Valle del Maipo, Colchagua, Leyda, Maule, Curicó e Cachapoal</p>
             </div>
           </div>
-
-          <!-- Vinho 2: Baronesa P. Gran Reserva -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/baronesa-p.png" alt="Vinho Baronesa P. Gran Reserva" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Card Vinho: Almaviva Epu -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/almaviva-epu.png" alt="Garrafa Almaviva Epu" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Almaviva</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Maipo | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Almaviva Epu</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon, Carménère, Merlot e Cabernet Franc
+              </p>
             </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">Valle Central • Chile</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Baronesa P. Gran Reserva</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              Homenagem à Baronesa Philippine de Rothschild. Corte elegante de Carmenère e Syrah com aromas de amoras negras, especiarias e toques tostados.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Cordeiro</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 940</span>
-            </div>
-          </div>
-
-          <!-- Vinho 3: Marqués de Murrieta -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/marques-murrieta.png" alt="Vinho Marqués de Murrieta Reserva" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
-            </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">DOC Rioja • Espanha</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Marqués de Murrieta Reserva</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              Clássico espanhol de renome mundial. Predomínio de Tempranillo com envelhecimento em carvalho americano, estrutura harmoniosa e final persistente.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Bife Chorizo</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 590</span>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 1.030</span>
             </div>
           </div>
-
-          <!-- Vinho 4: Bodega Garzón Reserva Tannat -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/bodega-garzon-tannat.png" alt="Vinho Bodega Garzón Reserva Tannat" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+          <!-- Card Vinho: Amayna -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/amayna-pinot.png" alt="Garrafa Amayna" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Garcés Silva e Vineyard</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">San Antonio | Leyda | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Amayna</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Pinot Noir
+              </p>
             </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">Maldonado • Uruguai</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Bodega Garzón Reserva Tannat</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              O autêntico Tannat uruguaio com influência da brisa do Atlântico. Frutas negras maduras, taninos macios e mineralidade mineral expressiva.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Assado de Tira</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 380</span>
-            </div>
-          </div>
-
-          <!-- Vinho 5: Beronia Crianza -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/beronia-crianza.png" alt="Vinho Beronia Crianza" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
-            </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">Rioja Alta • Espanha</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Beronia Crianza</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              Tempranillo e Garnacha de vinhedos selecionados. Notas de baunilha, cacau e frutas vermelhas frescas com frescor e equilíbrio notável.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Vacio / Fraldinha</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 305</span>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 510</span>
             </div>
           </div>
-
-          <!-- Vinho 6: Adobe Reserva Orgânico -->
-          <div class="bg-surface-low border border-gold-border p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-            <div class="h-64 flex items-center justify-center mb-4 relative">
-              <img src="assets/images/wines/adobe-organico.png" alt="Vinho Adobe Reserva Orgânico" class="h-56 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+          <!-- Card Vinho: Petirrojo Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/petirrojo-reserva.png" alt="Garrafa Petirrojo Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bisquertt</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Petirrojo Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
             </div>
-            <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-semibold">Valle de Casablanca • Chile</span>
-            <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main mt-1">Adobe Reserva Orgânico</h3>
-            <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed">
-              Produção 100% orgânica e biodinâmica da vinícola Emiliana. Aromas vibrantes de frutas silvestres, toques florais e final leve e sedoso.
-            </p>
-            <div class="mt-4 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
-              <span class="text-charcoal-muted uppercase">Harmonização: Galeto / Saladas</span>
-              <span class="font-bold text-flame-wine text-sm">R$ 130</span>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 130</span>
             </div>
           </div>
+          <!-- Card Vinho: La Joya Gran Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/la-joya-gran-reserva-cabernet.png" alt="Garrafa La Joya Gran Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bisquertt</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">La Joya Gran Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 215</span>
+            </div>
+          </div>
+          <!-- Card Vinho: La Joya Gran Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/la-joya-gran-reserva-syrah.png" alt="Garrafa La Joya Gran Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bisquertt</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">La Joya Gran Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Syrah
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 215</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Bouchon Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/bouchon-reserva-carmenere.png" alt="Garrafa Bouchon Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bouchon</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Maule | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Bouchon Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 135</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Bouchon Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/bouchon-reserva-cabernet.png" alt="Garrafa Bouchon Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bouchon</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Maule | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Bouchon Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 135</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Baronesa P. -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/baronesa-p.png" alt="Garrafa Baronesa P." class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Escudo Rojo</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Maipo | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Baronesa P.</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon, Cabernet Franc, Syrah, Petit Verdot e Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 940</span>
+            </div>
+          </div>
+          <!-- Card Vinho: SIMIS -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/simis-carmenere.png" alt="Garrafa SIMIS" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Góes</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Vale do Curicó | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">SIMIS</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 130</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Escudo Rojo Gran Reserva Blend -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/escudo-rojo-gran-reserva.png" alt="Garrafa Escudo Rojo Gran Reserva Blend" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Escudo Rojo</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle Central | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Escudo Rojo Gran Reserva Blend</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon, Carménère, Syrah, Reserva Blend
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 315</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Arboleda -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/arboleda-cabernet.png" alt="Garrafa Arboleda" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Arboleda</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle del Aconcagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Arboleda</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 275</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Arboleda -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/arboleda-carmenere.png" alt="Garrafa Arboleda" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Arboleda</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle del Aconcagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Arboleda</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 275</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Casa Lapastole -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/casa-lapastole.png" alt="Garrafa Casa Lapastole" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Cuveé Alexander</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Vale do Colchagua Apalta | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Casa Lapastole</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Merlot
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 570</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Bicicleta Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/bicicleta-reserva-pinot.png" alt="Garrafa Bicicleta Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Cono Sur</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle Central | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Bicicleta Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Pinot Noir
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 130</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Coyam -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/coyam-emiliana.png" alt="Garrafa Coyam" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Emiliana</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle de Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Coyam</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Syrah, Carménère, Cabernet Sauvignon, Carignan, Garnacha, Mourvèdre, Petit Verdot, Tempranillo e Malbec
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 515</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Cono Sur Single Vineyard Block 21 -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/cono-sur-block-21.png" alt="Garrafa Cono Sur Single Vineyard Block 21" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Cono Sur</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Cachapoal | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Cono Sur Single Vineyard Block 21</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Pinot Noir
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 325</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Los Vascos Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/los-vascos-reserva.png" alt="Garrafa Los Vascos Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Domaines Barons de Rothschild</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Los Vascos Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 325</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Adobe Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/adobe-reserva-carmenere.png" alt="Garrafa Adobe Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Emiliana</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle de Colchagua | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Adobe Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 130</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Bouchon Block Séries -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/bouchon-block-series.png" alt="Garrafa Bouchon Block Séries" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bouchon</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Maule | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Bouchon Block Séries</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Carménère
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 230</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Novas Gran Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/novas-gran-reserva-cabernet.png" alt="Garrafa Novas Gran Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Emiliana</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle del Maule | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Novas Gran Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 190</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Adobe Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/adobe-reserva-syrah.png" alt="Garrafa Adobe Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Emiliana</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle Central | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Adobe Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Syrah
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 130</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Novas Gran Reserva Stellar Selection -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="chile">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/novas-stellar-selection.png" alt="Garrafa Novas Gran Reserva Stellar Selection" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Emiliana</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Valle del Maule | Chile</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Novas Gran Reserva Stellar Selection</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Cabernet Sauvignon, Syrah e Carignan
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 190</span>
+            </div>
+          </div>
+          </div>
+        </div>
 
+        <!-- Grid de Vinhos da Espanha -->
+        <div class="wine-country-block" id="wine-block-espanha">
+          <div class="flex items-center gap-3 pb-3 mb-8 border-b-2 border-gold-border">
+            <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">public</span>
+            <div>
+              <h3 class="font-geom font-normal text-xl tracking-[0.16em] uppercase text-charcoal-main">Vinhos da Espanha</h3>
+              <p class="font-geom font-light text-xs text-charcoal-muted mt-0.5 uppercase">DOC Rioja, Ribera del Duero, Campo de Borja, Almansa e La Roda</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Card Vinho: Beronia -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/beronia-tempranillo.png" alt="Garrafa Beronia" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Beronia</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Rioja | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Beronia</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Tempranillo
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 290</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Bayanegra -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/bayanegra-tempranillo.png" alt="Garrafa Bayanegra" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bodegas Celaya</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">La Roda Albacete | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Bayanegra</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Tempranillo
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 155</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Beronia Crianza -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/beronia-crianza.png" alt="Garrafa Beronia Crianza" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Beronia</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Rioja | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Beronia Crianza</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Tempranillo, Garnacha e Mazuelo
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 305</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Arrocal Passion Crianza -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/arrocal-passion-crianza.png" alt="Garrafa Arrocal Passion Crianza" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Arrocal</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Ribera del Duero | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Arrocal Passion Crianza</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Tempranillo
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 405</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Borsao Selección -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/borsao-seleccion.png" alt="Garrafa Borsao Selección" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Borsao</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Campo de Borja | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Borsao Selección</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Garnacha, Tempranillo e Syrah
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 205</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Adaras Aldea -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/adaras-aldea.png" alt="Garrafa Adaras Aldea" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Venta La Vega</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Almansa | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Adaras Aldea</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Garnacha e Syrah
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 180</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Marqués de Murrieta Reserva -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/marques-murrieta.png" alt="Garrafa Marqués de Murrieta Reserva" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Marques De Murrieta</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Rioja Alta | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Marqués de Murrieta Reserva</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Tempranillo, Graciano, Mazuelo e Garnacha
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 590</span>
+            </div>
+          </div>
+          <!-- Card Vinho: Santo Cristo Amphora -->
+          <div class="wine-card bg-surface-low border border-gold-border/60 hover:border-flame-wine p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-origin="espanha">
+            <div class="flex flex-col items-center text-center">
+              <div class="h-56 flex items-center justify-center mb-4 relative w-full">
+                <img src="assets/images/wines/santo-cristo-amphora.png" alt="Garrafa Santo Cristo Amphora" class="h-52 object-contain group-hover:scale-108 transition-transform duration-300 drop-shadow-md">
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[10px] font-geom uppercase tracking-widest text-aged-gold-dark font-medium">Bodegas Santo Cristo</span>
+                <span class="text-gold-border text-xs">•</span>
+                <span class="text-[10px] font-geom uppercase tracking-widest text-charcoal-muted font-light">Campo de Borja | Espanha</span>
+              </div>
+              <h3 class="font-geom font-normal text-lg uppercase tracking-wider text-charcoal-main group-hover:text-flame-wine transition-colors leading-snug">Santo Cristo Amphora</h3>
+              <p class="font-geom text-xs text-charcoal-muted mt-2 leading-relaxed font-light">
+                <strong class="text-charcoal-main font-medium">Uvas:</strong> Garnacha
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-gold-border/40 w-full flex justify-between items-center text-xs font-geom">
+              <span class="text-charcoal-muted uppercase text-[10px] tracking-wider font-light">Garrafa 750ml</span>
+              <span class="font-bold text-flame-wine text-base">R$ 160</span>
+            </div>
+          </div>
+          </div>
         </div>
 
       </div>
@@ -1714,6 +2284,37 @@
             p.style.display = 'none';
           }
         });
+      });
+    });
+
+    
+    // Wine category filter tabs
+    const wineTabBtns = document.querySelectorAll('.wine-tab-btn');
+    const wineCards = document.querySelectorAll('.wine-card');
+    const chileBlock = document.getElementById('wine-block-chile');
+    const spainBlock = document.getElementById('wine-block-espanha');
+    
+    wineTabBtns.forEach(wBtn => {
+      wBtn.addEventListener('click', () => {
+        wineTabBtns.forEach(b => {
+          b.classList.remove('bg-flame-wine', 'text-white');
+          b.classList.add('bg-white', 'text-charcoal-main');
+        });
+        wBtn.classList.remove('bg-white', 'text-charcoal-main');
+        wBtn.classList.add('bg-flame-wine', 'text-white');
+
+        const filter = wBtn.getAttribute('data-filter');
+        if (filter === 'todos') {
+          if (chileBlock) chileBlock.style.display = 'block';
+          if (spainBlock) spainBlock.style.display = 'block';
+          wineCards.forEach(c => c.style.display = 'flex');
+        } else if (filter === 'chile') {
+          if (chileBlock) chileBlock.style.display = 'block';
+          if (spainBlock) spainBlock.style.display = 'none';
+        } else if (filter === 'espanha') {
+          if (chileBlock) chileBlock.style.display = 'none';
+          if (spainBlock) spainBlock.style.display = 'block';
+        }
       });
     });
 
