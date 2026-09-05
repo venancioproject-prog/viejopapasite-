@@ -11,7 +11,7 @@
   <!-- Google Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -38,7 +38,7 @@
           },
           fontFamily: {
             "geom": ["Montserrat", "sans-serif"],
-            "editorial": ["Playfair Display", "serif"]
+            "editorial": ["Montserrat", "sans-serif"]
           },
           spacing: {
             "gutter-mobile": "1.25rem",
@@ -51,7 +51,7 @@
   </script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-charcoal-main font-editorial antialiased selection:bg-flame-wine selection:text-white">
+<body class="bg-white text-charcoal-main font-geom antialiased selection:bg-flame-wine selection:text-white">
 
   <!-- HEADER TRANSLÚCIDO COM GLASSMORPHISM & BORDA DOURADA -->
   <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-gold-border shadow-[0_2px_20px_rgba(201,168,76,0.10)] transition-all duration-300">
@@ -64,23 +64,23 @@
 
       <!-- NAVEGAÇÃO DESKTOP EM CAIXA ALTA GEOMÉTRICA -->
       <nav class="hidden lg:flex items-center gap-6 xl:gap-7">
-        <a href="#inicio" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine transition-colors duration-200">Início</a>
-        <a href="#sobre" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Sobre Nós</a>
-        <a href="#destaques" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Destaques</a>
-        <a href="#cava" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Carta de Vinhos</a>
-        <a href="#cardapio" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Cardápio</a>
-        <a href="#eventos" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Eventos</a>
-        <a href="#ambientes" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">O Espaço</a>
-        <a href="#reservas" class="font-geom font-semibold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Reservas</a>
+        <a href="#inicio" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine transition-colors duration-200">Início</a>
+        <a href="#sobre" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Sobre Nós</a>
+        <a href="#destaques" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Destaques</a>
+        <a href="#cava" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Carta de Vinhos</a>
+        <a href="#cardapio" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Cardápio</a>
+        <a href="#eventos" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Eventos</a>
+        <a href="#ambientes" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">O Espaço</a>
+        <a href="#reservas" class="font-geom font-bold text-[12px] tracking-[0.2em] uppercase text-charcoal-muted hover:text-flame-wine transition-colors duration-200">Reservas</a>
       </nav>
 
       <!-- BOTÃO CTA DE RESERVA & MOBILE TOGGLE -->
       <div class="flex items-center gap-3 sm:gap-4">
-        <a href="#reservas" class="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-bold text-[11px] tracking-[0.22em] uppercase shadow-[0_4px_16px_rgba(160,21,83,0.3)] hover:shadow-lg transition-all duration-300">
+        <a href="#reservas" class="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-extrabold text-[11px] tracking-[0.22em] uppercase shadow-[0_4px_16px_rgba(160,21,83,0.3)] hover:shadow-lg transition-all duration-300">
           Reservar Mesa
         </a>
         <!-- Mobile Menu Hamburger Button -->
-        <button id="mobile-menu-btn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 rounded border border-gold-border text-charcoal-main hover:text-flame-wine transition-colors">
+        <button id="mobile-menu-btn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 rounded border border-gold-border text-charcoal-main hover:text-flame-wine transition-colors cursor-pointer">
           <span class="material-symbols-outlined text-[24px]">menu</span>
         </button>
       </div>
@@ -95,7 +95,7 @@
       <a href="#cava" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Cava &amp; Carta de Vinhos</a>
       <a href="#cardapio" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Cardápio Completo</a>
       <a href="#eventos" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">Eventos &amp; Experiências GEELY</a>
-      <a href="#ambientes" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">O Espaço &amp; Mirador</a>
+      <a href="#ambientes" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-charcoal-main hover:text-flame-wine py-2 border-b border-gray-100">O Espaço &amp; 12 Ambientes</a>
       <a href="#reservas" class="mobile-link block font-geom font-bold text-xs tracking-[0.2em] uppercase text-flame-wine py-2">Reservas VIP</a>
     </div>
   </header>
@@ -119,29 +119,29 @@
           
           <!-- Selo / Badge Superior com Fundo Branco Translúcido -->
           <div class="inline-flex items-center gap-2.5 px-4 py-1.5 border border-gold-border bg-white/95 backdrop-blur-md self-start shadow-sm">
-            <span class="w-2 h-2 rounded-full bg-flame-wine animate-pulse"></span>
-            <span class="font-geom font-bold text-[11px] tracking-[0.25em] uppercase text-charcoal-main">TRADIÇÃO URUGUAIA &amp; ALTA GASTRONOMIA</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-flame-wine animate-pulse"></span>
+            <span class="font-geom font-extrabold text-[11px] tracking-[0.25em] uppercase text-charcoal-main">TRADIÇÃO URUGUAIA &amp; ALTA GASTRONOMIA</span>
           </div>
 
-          <!-- Título Heroico em Tipografia Editorial -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.08] text-charcoal-main">
-            O Fogo Sagrado da <span class="italic font-normal text-flame-wine">Parrilla Uruguaia</span> &amp; a Exclusividade da <span class="italic font-normal text-aged-gold-dark">Nossa Cava</span>.
+          <!-- Título Heroico em Tipografia Geométrica em Caixa Alta -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.08] text-charcoal-main tracking-tight uppercase">
+            O FOGO SAGRADO DA <span class="text-flame-wine">PARRILLA URUGUAIA</span> &amp; A EXCLUSIVIDADE DA <span class="text-aged-gold-dark">NOSSA CAVA</span>
           </h1>
 
           <!-- Descrição de Posicionamento -->
-          <p class="font-editorial text-lg sm:text-xl lg:text-2xl text-charcoal-muted leading-relaxed font-normal max-w-2xl bg-white/60 sm:bg-transparent backdrop-blur-xs sm:backdrop-blur-none p-2 sm:p-0 rounded">
-            Cortes nobres sob o calor da lenha, queijos fundidos, massas artesanais, experiências para grandes marcas e uma curadoria impecável de rótulos internacionais.
+          <p class="font-geom font-medium text-base sm:text-lg lg:text-xl text-charcoal-muted leading-relaxed max-w-2xl bg-white/60 sm:bg-transparent backdrop-blur-xs sm:backdrop-blur-none p-2 sm:p-0 rounded">
+            Cortes nobres sob o calor da lenha, queijos fundidos, massas artesanais, experiências para grandes marcas e uma curadoria impecável de rótulos internacionais na Estrada do Vinho.
           </p>
 
           <!-- Botões de Ação Hero -->
           <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#cardapio" class="inline-flex items-center justify-center px-8 py-4 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-bold text-xs tracking-[0.25em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.35)] transition-all duration-300">
+            <a href="#cardapio" class="inline-flex items-center justify-center px-8 py-4 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-extrabold text-xs tracking-[0.25em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.35)] transition-all duration-300">
               Ver Cardápio Completo
             </a>
-            <a href="#cava" class="inline-flex items-center justify-center px-8 py-4 border-2 border-aged-gold text-charcoal-main hover:bg-aged-gold hover:text-white font-geom font-bold text-xs tracking-[0.25em] uppercase transition-all duration-300 bg-white/90 backdrop-blur-sm">
+            <a href="#cava" class="inline-flex items-center justify-center px-8 py-4 border-2 border-aged-gold text-charcoal-main hover:bg-aged-gold hover:text-white font-geom font-extrabold text-xs tracking-[0.25em] uppercase transition-all duration-300 bg-white/90 backdrop-blur-sm">
               Conhecer a Cava
             </a>
-            <a href="#eventos" class="inline-flex items-center gap-2 px-6 py-4 text-charcoal-main hover:text-flame-wine font-geom font-bold text-xs tracking-[0.2em] uppercase transition-colors bg-white/80 sm:bg-transparent backdrop-blur-xs">
+            <a href="#eventos" class="inline-flex items-center gap-2 px-6 py-4 text-charcoal-main hover:text-flame-wine font-geom font-extrabold text-xs tracking-[0.2em] uppercase transition-colors bg-white/80 sm:bg-transparent backdrop-blur-xs">
               <span class="material-symbols-outlined text-[18px] text-flame-wine">corporate_fare</span>
               Eventos e concierge VIP
             </a>
@@ -156,20 +156,20 @@
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div class="border-r border-gold-border/40 last:border-0 px-3">
-            <p class="font-geom font-bold text-xl sm:text-2xl text-flame-wine">100%</p>
-            <p class="font-geom text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Lenha Nobre &amp; Brasa Viva</p>
+            <p class="font-geom font-extrabold text-xl sm:text-2xl text-flame-wine uppercase">100%</p>
+            <p class="font-geom font-bold text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Lenha Nobre &amp; Brasa Viva</p>
           </div>
           <div class="border-r border-gold-border/40 last:border-0 px-3">
-            <p class="font-geom font-bold text-xl sm:text-2xl text-aged-gold-dark">+150</p>
-            <p class="font-geom text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Rótulos Selecionados na Cava</p>
+            <p class="font-geom font-extrabold text-xl sm:text-2xl text-aged-gold-dark uppercase">+150</p>
+            <p class="font-geom font-bold text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Rótulos Selecionados na Cava</p>
           </div>
           <div class="border-r border-gold-border/40 last:border-0 px-3">
-            <p class="font-geom font-bold text-xl sm:text-2xl text-flame-wine">Black Angus</p>
-            <p class="font-geom text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Cortes Certificados</p>
+            <p class="font-geom font-extrabold text-xl sm:text-2xl text-flame-wine uppercase">Black Angus</p>
+            <p class="font-geom font-bold text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Cortes Certificados</p>
           </div>
           <div class="px-3">
-            <p class="font-geom font-bold text-xl sm:text-2xl text-aged-gold-dark">São Roque • SP</p>
-            <p class="font-geom text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Estrada do Vinho</p>
+            <p class="font-geom font-extrabold text-xl sm:text-2xl text-aged-gold-dark uppercase">São Roque • SP</p>
+            <p class="font-geom font-bold text-[11px] tracking-wider uppercase text-charcoal-muted mt-1">Estrada do Vinho</p>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
           <div class="lg:col-span-6 grid grid-cols-2 gap-4">
             <div class="space-y-4">
               <div class="border border-gold-border overflow-hidden shadow-sm group">
-                <img src="assets/images/salao-principal.jpg" alt="Salão Nobre do Viejo Papa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/salao-principal.jpg">
+                <img src="assets/images/espaco-salao-principal.jpg" alt="Salão Nobre do Viejo Papa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-salao-principal.jpg">
               </div>
               <div class="border border-gold-border overflow-hidden shadow-sm group">
                 <img src="assets/images/parrilla-fogo.jpg" alt="Parrilla com Lenha em Brasa" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/parrilla-fogo.jpg">
@@ -195,23 +195,23 @@
                 <img src="assets/images/destaque-parrilla-mista.jpg" alt="Parrillada Nobre Servida na Mesa" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/destaque-parrilla-mista.jpg">
               </div>
               <div class="border border-gold-border overflow-hidden shadow-sm group">
-                <img src="assets/images/salao-mirante.jpg" alt="Ambiente com Vista Panorâmica" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/salao-mirante.jpg">
+                <img src="assets/images/espaco-varanda-mirante.jpg" alt="Ambiente com Vista Panorâmica" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-varanda-mirante.jpg">
               </div>
             </div>
           </div>
 
-          <!-- Texto Institucional -->
+          <!-- Texto Institucional com Tipografia Geométrica em Caixa Alta -->
           <div class="lg:col-span-6 space-y-6">
             <div class="inline-flex items-center gap-2 border-b border-aged-gold pb-1">
-              <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">ORIGEM &amp; VOCAÇÃO</span>
+              <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">ORIGEM &amp; VOCAÇÃO</span>
             </div>
-            <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-charcoal-main">
-              A Autêntica Tradição dos <span class="italic text-flame-wine">Parrilleros</span> do Prata.
+            <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase leading-tight text-charcoal-main tracking-tight">
+              A AUTÊNTICA TRADIÇÃO DOS <span class="text-flame-wine">PARRILLEROS</span> DO PRATA
             </h2>
-            <p class="font-editorial text-lg text-charcoal-muted leading-relaxed">
+            <p class="font-geom font-normal text-base text-charcoal-muted leading-relaxed">
               No Viejo Papa, localizado na paradisíaca Estrada do Vinho em São Roque, a gastronomia é tratada como um rito sagrado. Nossos mestres assadores dominam o fogo com precisão cirúrgica, utilizando lenhas selecionadas que imprimem aromas e caramelização inigualáveis a cada corte.
             </p>
-            <p class="font-editorial text-base text-charcoal-muted leading-relaxed">
+            <p class="font-geom font-normal text-base text-charcoal-muted leading-relaxed">
               Mais do que uma refeição, oferecemos um refúgio acolhedor onde a arquitetura rústico-contemporânea se harmoniza com vinhos premiados e a mais refinada hospitalidade sul-americana.
             </p>
 
@@ -220,14 +220,14 @@
                 <span class="material-symbols-outlined text-aged-gold-dark text-[28px]">local_fire_department</span>
                 <div>
                   <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Lenhas Nobres</h4>
-                  <p class="font-editorial text-xs text-charcoal-muted mt-0.5">Acácia negra e angico para defumação sutil e calor uniforme.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-0.5">Acácia negra e angico para defumação sutil e calor uniforme.</p>
                 </div>
               </div>
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-aged-gold-dark text-[28px]">award_star</span>
                 <div>
                   <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Carnes Certificadas</h4>
-                  <p class="font-editorial text-xs text-charcoal-muted mt-0.5">Raças britânicas Black Angus e Hereford de alto marmoreio.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-0.5">Raças britânicas Black Angus e Hereford de alto marmoreio.</p>
                 </div>
               </div>
             </div>
@@ -243,11 +243,11 @@
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">EXPERIÊNCIAS CONSAGRADAS</span>
-          <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-            Destaques da <span class="italic text-flame-wine">Parrilla</span>
+          <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">EXPERIÊNCIAS CONSAGRADAS</span>
+          <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+            DESTAQUES DA <span class="text-flame-wine">PARRILLA</span>
           </h2>
-          <p class="font-editorial text-base text-charcoal-muted">
+          <p class="font-geom text-base text-charcoal-muted">
             Uma seleção de criações assinadas pelo nosso Chef Parrillero que sintetizam a identidade gastronômica do Viejo Papa.
           </p>
         </div>
@@ -258,15 +258,15 @@
           <div class="bg-white border border-gold-border group overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
             <div class="relative h-64 overflow-hidden">
               <img src="assets/images/destaque-bife-fatiado.jpg" alt="Bife de Chorizo & Tomahawk na Brasa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/destaque-bife-fatiado.jpg">
-              <span class="absolute top-4 left-4 bg-flame-wine text-white font-geom font-bold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Especialidade da Casa</span>
+              <span class="absolute top-4 left-4 bg-flame-wine text-white font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Especialidade da Casa</span>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <div class="flex justify-between items-baseline mb-2">
-                  <h3 class="font-geom font-bold text-base tracking-wider uppercase text-charcoal-main">Bife de Chorizo Prime</h3>
+                  <h3 class="font-geom font-extrabold text-base tracking-wider uppercase text-charcoal-main">Bife de Chorizo Prime</h3>
                   <span class="font-geom font-extrabold text-base text-aged-gold-dark">01p R$ 130 / 02p R$ 220</span>
                 </div>
-                <p class="font-editorial italic text-sm text-charcoal-muted leading-relaxed">
+                <p class="font-geom text-sm text-charcoal-muted leading-relaxed">
                   Contrafilé nobre com capa de gordura perfeita, selado na brasa viva e fatiado no ponto exato com flor de sal. Acompanha Chimichurri e Salsa Criola.
                 </p>
               </div>
@@ -280,16 +280,16 @@
           <!-- Card 2: Assado de Tira -->
           <div class="bg-white border border-gold-border group overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
             <div class="relative h-64 overflow-hidden">
-              <img src="assets/images/destaque-assado-tira.jpg" alt="Assado de Tira no Ponto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/destaque-assado-tira.jpg">
-              <span class="absolute top-4 left-4 bg-aged-gold-dark text-white font-geom font-bold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Corte Clássico</span>
+              <img src="assets/images/prato-asado-tiras.jpg" alt="Assado de Tira no Ponto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/prato-asado-tiras.jpg">
+              <span class="absolute top-4 left-4 bg-aged-gold-dark text-white font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Corte Clássico</span>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <div class="flex justify-between items-baseline mb-2">
-                  <h3 class="font-geom font-bold text-base tracking-wider uppercase text-charcoal-main">Assado de Tira Angus</h3>
+                  <h3 class="font-geom font-extrabold text-base tracking-wider uppercase text-charcoal-main">Assado de Tira Angus</h3>
                   <span class="font-geom font-extrabold text-base text-aged-gold-dark">01p R$ 130 / 02p R$ 230</span>
                 </div>
-                <p class="font-editorial italic text-sm text-charcoal-muted leading-relaxed">
+                <p class="font-geom text-sm text-charcoal-muted leading-relaxed">
                   Corte transversal das primeiras costelas bovinas. Gordura entremeada caramelizada e osso que transmite sabor e untuosidade únicos.
                 </p>
               </div>
@@ -304,15 +304,15 @@
           <div class="bg-white border border-gold-border group overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
             <div class="relative h-64 overflow-hidden">
               <img src="assets/images/destaque-cordeiro.jpg" alt="Paleta de Cordeiro Assada 12h" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/destaque-cordeiro.jpg">
-              <span class="absolute top-4 left-4 bg-charcoal-main text-white font-geom font-bold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Lentamente Assado</span>
+              <span class="absolute top-4 left-4 bg-charcoal-main text-white font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase px-3 py-1 shadow">Lentamente Assado</span>
             </div>
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <div class="flex justify-between items-baseline mb-2">
-                  <h3 class="font-geom font-bold text-base tracking-wider uppercase text-charcoal-main">Paleta de Cordeiro (12h)</h3>
+                  <h3 class="font-geom font-extrabold text-base tracking-wider uppercase text-charcoal-main">Paleta de Cordeiro (12h)</h3>
                   <span class="font-geom font-extrabold text-base text-aged-gold-dark">02p R$ 380</span>
                 </div>
-                <p class="font-editorial italic text-sm text-charcoal-muted leading-relaxed">
+                <p class="font-geom text-sm text-charcoal-muted leading-relaxed">
                   Assada lentamente por mais de 12 horas até desmanchar ao toque do garfo. Acompanha Molho Tzatziki refrescante e Molho de Hortelã fresco.
                 </p>
               </div>
@@ -337,19 +337,19 @@
           <div class="space-y-3 max-w-2xl">
             <div class="inline-flex items-center gap-2 border-b border-aged-gold pb-1">
               <span class="material-symbols-outlined text-flame-wine text-[20px]">wine_bar</span>
-              <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">CAVA &amp; SOMMELIER</span>
+              <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">CAVA &amp; SOMMELIER</span>
             </div>
-            <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-              A Carta de Vinhos do <span class="italic text-aged-gold-dark">Viejo Papa</span>
+            <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+              A CARTA DE VINHOS DO <span class="text-aged-gold-dark">VIEJO PAPA</span>
             </h2>
-            <p class="font-editorial text-base sm:text-lg text-charcoal-muted leading-relaxed">
+            <p class="font-geom text-base sm:text-lg text-charcoal-muted leading-relaxed">
               Uma curadoria exclusiva com rótulos icônicos do Novo e Velho Mundo, selecionados a dedo para harmonizar perfeitamente com a intensidade e a complexidade dos nossos cortes na brasa.
             </p>
           </div>
           <div class="flex items-center gap-4">
             <div class="text-right hidden sm:block">
-              <p class="font-geom font-bold text-xs uppercase text-charcoal-main">Temperatura Controlada</p>
-              <p class="font-editorial text-xs text-charcoal-muted">Cava climatizada a 16°C</p>
+              <p class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Temperatura Controlada</p>
+              <p class="font-geom text-xs text-charcoal-muted">Cava climatizada a 16°C</p>
             </div>
             <div class="w-12 h-12 rounded-full border border-gold-border bg-wine-soft flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-flame-wine text-[26px]">ac_unit</span>
@@ -366,9 +366,9 @@
               <div class="absolute inset-0 bg-radial from-amber-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <img src="assets/images/wines/almaviva-epu.png" alt="Vinho Almaviva Epu" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">ÍCONE CHILENO</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Almaviva EPU</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">Valle del Maipo • Cabernet Sauvignon Blend</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">ÍCONE CHILENO</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Almaviva EPU</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">Valle del Maipo • Cabernet Sauvignon Blend</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Tomahawk</span>
@@ -380,9 +380,9 @@
             <div class="h-64 w-full flex items-center justify-center mb-4 relative">
               <img src="assets/images/wines/marques-murrieta.png" alt="Marqués de Murrieta Reserva Rioja" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">RIOJA ESPANHA</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Marqués de Murrieta</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">DOC Rioja • Tempranillo &amp; Mazuelo</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">RIOJA ESPANHA</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Marqués de Murrieta</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">DOC Rioja • Tempranillo &amp; Mazuelo</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Bife Ancho</span>
@@ -394,9 +394,9 @@
             <div class="h-64 w-full flex items-center justify-center mb-4 relative">
               <img src="assets/images/wines/baronesa-p.png" alt="Baronesa P. Reserva Especial" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">GRAN RESERVA</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Baronesa P.</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">Valle Central • Carmenère &amp; Syrah</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">GRAN RESERVA</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Baronesa P.</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">Valle Central • Carmenère &amp; Syrah</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Assado de Tira</span>
@@ -408,9 +408,9 @@
             <div class="h-64 w-full flex items-center justify-center mb-4 relative">
               <img src="assets/images/wines/beronia-crianza.png" alt="Beronia Crianza Rioja" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">CLÁSSICO ESPANHOL</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Beronia Crianza</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">Rioja Alta • Tempranillo &amp; Garnacha</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">CLÁSSICO ESPANHOL</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Beronia Crianza</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">Rioja Alta • Tempranillo &amp; Garnacha</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Cordeiro</span>
@@ -422,9 +422,9 @@
             <div class="h-64 w-full flex items-center justify-center mb-4 relative">
               <img src="assets/images/wines/adobe-organico.png" alt="Adobe Reserva Orgânico" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">100% ORGÂNICO</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Adobe Reserva</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">Valle de Casablanca • Pinot Noir</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">100% ORGÂNICO</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Adobe Reserva</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">Valle de Casablanca • Pinot Noir</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Saladas / Pescada</span>
@@ -436,9 +436,9 @@
             <div class="h-64 w-full flex items-center justify-center mb-4 relative">
               <img src="assets/images/wines/espumante-reserva.png" alt="Espumante Brut Reserva Especial" class="h-56 w-auto object-contain group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
             </div>
-            <span class="font-geom font-bold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">CELEBRAÇÃO</span>
-            <h4 class="font-geom font-bold text-sm text-charcoal-main uppercase mb-1">Espumante Brut</h4>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-3">Método Tradicional • Chardonnay &amp; Pinot</p>
+            <span class="font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase text-aged-gold-dark mb-1">CELEBRAÇÃO</span>
+            <h4 class="font-geom font-extrabold text-sm text-charcoal-main uppercase mb-1">Espumante Brut</h4>
+            <p class="font-geom text-xs text-charcoal-muted mb-3">Método Tradicional • Chardonnay &amp; Pinot</p>
             <div class="w-full pt-3 border-t border-gold-border/40 mt-auto flex justify-between items-center text-xs font-geom">
               <span class="text-charcoal-muted">Harmoniza:</span>
               <span class="font-bold text-flame-wine">Entradas / Sobremesas</span>
@@ -452,11 +452,11 @@
           <div class="flex items-center gap-4">
             <span class="material-symbols-outlined text-flame-wine text-4xl">stylus_note</span>
             <div>
-              <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Consulte Nosso Sommelier da Casa</h4>
-              <p class="font-editorial text-sm text-charcoal-muted">Harmonizações sob medida para a sua mesa, jantares harmonizados e curadoria de rótulos raros.</p>
+              <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Consulte Nosso Sommelier da Casa</h4>
+              <p class="font-geom text-sm text-charcoal-muted">Harmonizações sob medida para a sua mesa, jantares harmonizados e curadoria de rótulos raros.</p>
             </div>
           </div>
-          <a href="#reservas" class="inline-flex items-center justify-center px-6 py-3 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-bold text-xs tracking-[0.2em] uppercase shrink-0 transition-colors shadow">
+          <a href="#reservas" class="inline-flex items-center justify-center px-6 py-3 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-extrabold text-xs tracking-[0.2em] uppercase shrink-0 transition-colors shadow">
             Solicitar Carta Completa
           </a>
         </div>
@@ -464,24 +464,24 @@
       </div>
     </section>
 
-    <!-- 5. CARDÁPIO COMPLETO DO VIEJO PAPA (COM TODAS AS 12 CATEGORIAS) -->
+    <!-- 5. CARDÁPIO COMPLETO DO VIEJO PAPA (COM FOTOS REAIS RESTAURADAS) -->
     <section id="cardapio" class="py-20 lg:py-28 bg-surface-low border-b border-gold-border">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <!-- Header do Cardápio -->
         <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">GASTRONOMIA DE AUTOR</span>
-          <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-            Cardápio <span class="italic text-flame-wine">Completo</span>
+          <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">GASTRONOMIA DE AUTOR</span>
+          <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+            CARDÁPIO <span class="text-flame-wine">COMPLETO</span>
           </h2>
-          <p class="font-editorial text-base sm:text-lg text-charcoal-muted">
+          <p class="font-geom text-base sm:text-lg text-charcoal-muted">
             Da brasa aos tachos de cobre: ingredientes de origem nobre preparados com paixão e servidos com maestria.
           </p>
         </div>
 
         <!-- FILTROS DE CATEGORIA (TAB NAVIGATION INTERATIVA) -->
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12 overflow-x-auto pb-2">
-          <button class="menu-tab-btn active px-4 py-2 border border-gold-border font-geom font-bold text-xs tracking-wider uppercase transition-all cursor-pointer" data-target="all">
+          <button class="menu-tab-btn active px-4 py-2 border border-gold-border font-geom font-extrabold text-xs tracking-wider uppercase transition-all cursor-pointer" data-target="all">
             Todos os Itens
           </button>
           <button class="menu-tab-btn px-4 py-2 border border-gold-border bg-white text-charcoal-muted hover:text-flame-wine font-geom font-bold text-xs tracking-wider uppercase transition-all cursor-pointer" data-target="entradas">
@@ -532,19 +532,79 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">tapas</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">ENTRADAS</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">12 Itens</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">12 Itens</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
+              <!-- Item com Foto: Empanadas -->
+              <div class="p-4 border border-gold-border/50 hover:border-flame-wine transition-all flex flex-col sm:flex-row gap-4 bg-surface-low/50">
+                <img src="assets/images/prato-empanadas.jpg" alt="Empanadas Artesanais" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-empanadas.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Empanadas (3 un)</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 50</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Pastel assado no forno à lenha com recheio suculento de carne cortada na ponta da faca e especiarias.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Cristal</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item com Foto: Torresmo de Rolo à Pururuca -->
+              <div class="p-4 border border-gold-border/50 hover:border-flame-wine transition-all flex flex-col sm:flex-row gap-4 bg-surface-low/50">
+                <img src="assets/images/prato-panceta.jpg" alt="Torresmo de Rolo à Pururuca" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-panceta.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Torresmo de Rolo</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 55</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Fatia generosa de panceta enrolada pururucada e crocante, servida com molho de ervas e gomos de limão.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Witbier</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item com Foto: Molleja -->
+              <div class="p-4 border border-gold-border/50 hover:border-flame-wine transition-all flex flex-col sm:flex-row gap-4 bg-surface-low/50">
+                <img src="assets/images/prato-mollejas.jpg" alt="Molleja na Brasa" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-mollejas.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Molleja</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 58</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Iguaria do coração do boi com textura delicada e sabor adocicado com molho de ervas e limão fresco.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Cristal</span>
+                  </div>
+                </div>
+              </div>
+
               <!-- Item: Couvert -->
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Couvert da Casa</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Couvert da Casa</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 45</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Cesto de pães artesanais acompanhados de manteiga com ervas, patê de berinjela e sardela.
                   </p>
                 </div>
@@ -558,10 +618,10 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Provoleta com Salsa LLajua</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Provoleta com Salsa LLajua</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 40</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Fatia generosa de provolone tostada e derretida na chapa com salsa fresca à base de tomate.
                   </p>
                 </div>
@@ -575,10 +635,10 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Chorizo Grelhado Tradicional e Apimentado</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Chorizo Grelhado Tradicional / Apimentado</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 40</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Linguiça artesanal grelhada na brasa viva servida com molho chimichurri da casa.
                   </p>
                 </div>
@@ -592,16 +652,12 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Chorizo Queso Y Yuca</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Chorizo Queso Y Yuca</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 55</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Linguiça à base de carne de porco grelhada recheada com queijo e mandioca. Acompanha molho Chimichurri.
                   </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Especialidade:</span>
-                  <span class="font-bold text-charcoal-main">Recheio Cremoso</span>
                 </div>
               </div>
 
@@ -609,10 +665,10 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Morcilla</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Morcilla</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 50</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Famoso embutido à base de sangue elaborado com carnes selecionadas de porco, cebola e molho chimichurri. Acompanha Focaccia.
                   </p>
                 </div>
@@ -622,31 +678,14 @@
                 </div>
               </div>
 
-              <!-- Item: Molleja -->
-              <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Molleja</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 58</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Iguaria do coração do boi com textura delicada e sabor adocicado com molho de ervas e limão fresco.
-                  </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Cristal</span>
-                </div>
-              </div>
-
               <!-- Item: Chinchulines -->
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Chinchulines</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Chinchulines</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 52</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Iguaria tradicional da 1ª parte do intestino delgado com sabor e crocância de textura única.
                   </p>
                 </div>
@@ -656,31 +695,14 @@
                 </div>
               </div>
 
-              <!-- Item: Empanadas -->
-              <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Empanadas (3 unidades)</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 50</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Pastel assado no forno à lenha com recheio suculento de carne cortada na ponta da faca e especiarias.
-                  </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Cristal</span>
-                </div>
-              </div>
-
               <!-- Item: Croqueta de Jamon -->
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Croqueta de Jamon (6 unidades)</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Croqueta de Jamon (6 un)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 70</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Bolinho cremoso de bechamel e jamon crocante acompanhado de aioli artesanal e geleia de pimenta.
                   </p>
                 </div>
@@ -694,10 +716,10 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Croqueta de Costela (6 unidades)</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Croqueta de Costela (6 un)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 56</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Bolinho super cremoso de costela bovina desfiada crocante por fora, acompanhado de aioli e geleia de pimenta.
                   </p>
                 </div>
@@ -707,31 +729,14 @@
                 </div>
               </div>
 
-              <!-- Item: Torresmo de Rolo à Pururuca -->
-              <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Torresmo de Rolo à Pururuca</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 55</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Fatia generosa de panceta enrolada pururucada e crocante, servida com molho de ervas e gomos de limão.
-                  </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Witbier</span>
-                </div>
-              </div>
-
               <!-- Item: Aranccini -->
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Aranccini (6 unidades)</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Aranccini (6 un)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 45</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Bolinho de arroz de risoto recheado com queijo fundente, molho de tomate rústico e folhas de manjericão.
                   </p>
                 </div>
@@ -751,25 +756,28 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">nutrition</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">SALADAS &amp; ENTRADAS FRIAS</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">4 Opções</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">4 Opções</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              <!-- Item: Carpaccio -->
-              <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Carpaccio Nobre</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 60 / 02p R$ 65</span>
+              <!-- Item com Foto: Carpaccio -->
+              <div class="p-4 border border-gold-border/50 hover:border-flame-wine transition-all flex flex-col sm:flex-row gap-4 bg-surface-low/50">
+                <img src="assets/images/destaque-ceviche-vinhedo.jpg" alt="Carpaccio Nobre" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/destaque-ceviche-vinhedo.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Carpaccio Nobre</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 60 / 02p R$ 65</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Fatias finas de carne bovina com baby rúcula, lascas de parmesão curado, alcaparras e mostarda dijon.
+                    </p>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Fatias finas de carne bovina acompanhadas de baby rúcula, lascas de parmesão curado, alcaparras e toques de mostarda dijon.
-                  </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Cristal / Peach</span>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Cristal / Peach</span>
+                  </div>
                 </div>
               </div>
 
@@ -777,11 +785,11 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Salada Montevidéu</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Salada Montevidéu</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 70</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Mix de folhas nobres acompanhado de fatias de jamon serrano, figos grelhados na brasa, amêndoas laminadas e molho de vinagre balsâmico com mel.
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Mix de folhas nobres com jamon serrano, figos grelhados na brasa, amêndoas e molho balsâmico com mel.
                   </p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
@@ -794,11 +802,11 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Salada Garzón</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Salada Garzón</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 60</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Mix de folhas verdes acompanhado de coração e fundo de alcachofra, palmito pupunha, tomate cereja confit e molho de azeite extravirgem com ervas.
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Mix de folhas verdes com fundo de alcachofra, palmito pupunha, tomate cereja confit e azeite extravirgem com ervas.
                   </p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
@@ -811,16 +819,12 @@
               <div class="p-4 border border-gray-100 hover:border-gold-border transition-colors flex flex-col justify-between bg-surface-low/50">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Salada Marina</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Salada Marina</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 58</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Alface americana crocante acompanhada de palmito, cenoura ralada, cubos dourados de bacon, batata palha artesanal e molho de iogurte com mostarda.
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Alface americana crocante com palmito, cenoura ralada, cubos de bacon, batata palha e molho de iogurte com mostarda.
                   </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Clássico:</span>
-                  <span class="font-bold text-charcoal-main">Frescor &amp; Crocância</span>
                 </div>
               </div>
 
@@ -834,44 +838,87 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">skillet</span>
                 <div>
                   <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">CARNES BOVINAS NA BRASA</h3>
-                  <p class="font-editorial italic text-xs text-flame-wine mt-0.5">*Acompanham: Molho Chimichurri, Salsa Criola e Cebola Confitada</p>
+                  <p class="font-geom font-bold text-xs text-flame-wine mt-0.5 uppercase">*Acompanham: Molho Chimichurri, Salsa Criola e Cebola Confitada</p>
                 </div>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">8 Cortes Especiais</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">8 Cortes Nobres</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
+              <!-- Item com Foto: Bife de Chorizo -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/destaque-bife-fatiado.jpg" alt="Bife de Chorizo Angus" class="w-full sm:w-32 h-32 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/destaque-bife-fatiado.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Bife Chorizo</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 220</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      O clássico contrafilé do Prata com capa de gordura uniforme e maciez incomparável selado na grelha inclinada.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted uppercase">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Baden Baden IPA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item com Foto: Assado de Tira -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/prato-asado-tiras.jpg" alt="Assado de Tira Angus" class="w-full sm:w-32 h-32 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-asado-tiras.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Assado de Tira</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 230</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Tiras de costela bovina com osso cortadas transversalmente, liberando aromas e gordura tostada na brasa.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted uppercase">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Baden Baden IPA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item com Foto: Tomahawk -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/destaque-prime-rib.jpg" alt="Tomahawk Prime" class="w-full sm:w-32 h-32 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/destaque-prime-rib.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Tomahawk Prime</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">02p R$ 380</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Imponente corte com o osso longo da costela inteira, proporcionando máxima suculência e sabor.
+                    </p>
+                  </div>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted uppercase">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Baden Baden IPA</span>
+                  </div>
+                </div>
+              </div>
+
               <!-- Item: Bife Ancho -->
               <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Bife Ancho</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Bife Ancho</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 140 / 02p R$ 250</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Ojo de bife com alto marmoreio e camada interna de gordura que confere extrema suculência e sabor untuoso.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Baden Baden IPA</span>
-                </div>
-              </div>
-
-              <!-- Item: Bife Chorizo -->
-              <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Bife Chorizo</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 220</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    O clássico contrafilé do Prata com capa de gordura uniforme e maciez incomparável selado na grelha inclinada.
-                  </p>
-                </div>
-                <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -880,32 +927,15 @@
               <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Vacio (Fraldinha)</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Vacio (Fraldinha)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 240</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Corte de fibras longas e sabor marcante, selado por fora e extremamente macio e avermelhado por dentro.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Baden Baden IPA</span>
-                </div>
-              </div>
-
-              <!-- Item: Assado de Tira -->
-              <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Assado de Tira</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 230</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Tiras de costela bovina com osso cortadas transversalmente, liberando aromas e gordura tostada na brasa.
-                  </p>
-                </div>
-                <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -913,33 +943,16 @@
               <!-- Item: Steak Viejo Papa -->
               <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
                 <div>
-                  <div class="flex justify-between items-line gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Steak Viejo Papa</h4>
+                  <div class="flex justify-between items-baseline gap-2">
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Steak Viejo Papa</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 140 / 02p R$ 250</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Corte especial de assinatura da casa com espessura generosa, suculência extrema e maturação especial.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Baden Baden IPA</span>
-                </div>
-              </div>
-
-              <!-- Item: Tomahawk -->
-              <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Tomahawk Prime</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">02p R$ 380</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Imponente corte com o osso longo da costela inteira, proporcionando uma experiência visual e gastronômica grandiosa.
-                  </p>
-                </div>
-                <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -948,15 +961,15 @@
               <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Flat Iron</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Flat Iron</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 150 / 02p R$ 290</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Extraído da paleta com técnica especial, sendo o segundo corte mais macio do boi, com sabor profundo e textura aveludada.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -965,16 +978,16 @@
               <div class="p-5 border border-gold-border/60 hover:border-flame-wine transition-all bg-surface-low/70 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Costela na Brasa (10h)</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Costela na Brasa (10h)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 130 / 02p R$ 220</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Costela bovina assada pacientemente em fogo brando de lenha por mais de 10 horas até desmanchar.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Preparo:</span>
-                  <span class="font-bold text-charcoal-main">Fogo de Chão / Brasa Lenta</span>
+                  <span class="text-charcoal-muted uppercase">Preparo:</span>
+                  <span class="font-bold text-charcoal-main uppercase">Fogo de Chão</span>
                 </div>
               </div>
 
@@ -988,28 +1001,31 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">restaurant</span>
                 <div>
                   <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">CARNES DE CORDEIRO</h3>
-                  <p class="font-editorial italic text-xs text-flame-wine mt-0.5">*Acompanham: Molho Tzatziki e Molho de Hortelã Fresco</p>
+                  <p class="font-geom font-bold text-xs text-flame-wine mt-0.5 uppercase">*Acompanham: Molho Tzatziki e Molho de Hortelã Fresco</p>
                 </div>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">2 Opções Nobres</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">2 Opções</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              <!-- Item: Paleta de Cordeiro -->
-              <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Paleta de Cordeiro (12h)</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">02p R$ 380</span>
+              <!-- Item com Foto: Paleta de Cordeiro -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/destaque-cordeiro.jpg" alt="Paleta de Cordeiro" class="w-full sm:w-32 h-32 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/destaque-cordeiro.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Paleta de Cordeiro (12h)</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">02p R$ 380</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Peça inteira marinada em vinho branco e ervas finas, assada pacientemente por mais de 12 horas.
+                    </p>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Peça inteira de paleta marinada em vinho branco e ervas finas, assada pacientemente por mais de 12 horas.
-                  </p>
-                </div>
-                <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Baden Baden IPA</span>
+                  <div class="mt-2 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                    <span class="text-charcoal-muted uppercase">Harmonização:</span>
+                    <span class="font-bold text-flame-wine">Baden Baden IPA</span>
+                  </div>
                 </div>
               </div>
 
@@ -1017,15 +1033,15 @@
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Carré Francês de Cordeiro</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Carré Francês de Cordeiro</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 240 / 02p R$ 380</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Costeletas nobres com corte francês na brasa viva, seladas com manteiga de ervas e finalizadas com flor de sal.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -1040,44 +1056,42 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">set_meal</span>
                 <div>
                   <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">CARNES SUÍNAS SELECIONADAS</h3>
-                  <p class="font-editorial italic text-xs text-flame-wine mt-0.5">*Acompanham: Molho Chimichurri e Salsa Criola</p>
+                  <p class="font-geom font-bold text-xs text-flame-wine mt-0.5 uppercase">*Acompanham: Molho Chimichurri e Salsa Criola</p>
                 </div>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">2 Cortes</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">2 Cortes</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              <!-- Item: Bife Ancho Suíno -->
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Bife Ancho Suíno</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Bife Ancho Suíno</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 100 / 02p R$ 160</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Corte alto e suculento da sobrepaleta suína de raça selecionada, grelhado na brasa com tempero especial.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
 
-              <!-- Item: Bife Chorizo Suíno -->
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Bife Chorizo Suíno</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Bife Chorizo Suíno</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 90 / 02p R$ 150</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Lombo suíno nobre com capa de gordura dourada e crocante na brasa, preservando a máxima maciez e sabor.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Baden Baden IPA</span>
                 </div>
               </div>
@@ -1092,24 +1106,42 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">phishing</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">PEIXES &amp; AVES NA GRELHA</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">3 Opções</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">3 Opções</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
+              <!-- Item com Foto: Galeto -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col justify-between">
+                <img src="assets/images/destaque-galeto.jpg" alt="Galeto na Brasa" class="w-full h-36 object-cover border border-gold-border mb-3 gallery-zoom cursor-pointer" data-full="assets/images/destaque-galeto.jpg">
+                <div>
+                  <div class="flex justify-between items-baseline gap-2">
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Galeto Espalmado</h4>
+                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 85</span>
+                  </div>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Galeto primo canto aberto na grelha com tempero colonial de ervas frescas e redução de vinho branco.
+                  </p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
+                  <span class="font-bold text-flame-wine">Cristal</span>
+                </div>
+              </div>
+
               <!-- Item: Lombo de Pescada -->
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Lombo de Pescada</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Lombo de Pescada</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 130</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Lombo alto de pescada branca grelhado na brasa com molho gremolata fresco de limão siciliano e ervas.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Witbier</span>
                 </div>
               </div>
@@ -1118,33 +1150,16 @@
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Lombo de Pirarucu</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Lombo de Pirarucu</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 130</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Posta alta do gigante da Amazônia grelhado no ponto exato, servido com molho gremolata perfumado.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Witbier</span>
-                </div>
-              </div>
-
-              <!-- Item: Galeto Espalmado -->
-              <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Galeto Espalmado</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 85</span>
-                  </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Galeto primo canto aberto na grelha com tempero colonial de ervas frescas e redução de vinho branco.
-                  </p>
-                </div>
-                <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
-                  <span class="font-bold text-flame-wine">Cristal</span>
                 </div>
               </div>
 
@@ -1158,24 +1173,27 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">soup_kitchen</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">MASSAS ARTESANAIS &amp; MOLHOS</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">Criações da Nonna</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">Criações da Casa</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               
-              <!-- Item: Fettuccini -->
-              <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
-                <div>
-                  <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Fettuccini Artesanal</h4>
-                    <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 70</span>
+              <!-- Item com Foto: Fettuccini -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/prato-fettuccine.jpg" alt="Fettuccini Artesanal" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-fettuccine.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-baseline gap-2">
+                      <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Fettuccini Artesanal</h4>
+                      <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 70</span>
+                    </div>
+                    <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                      Massa artesanal fina feita diariamente à base de ovos caipiras e semolina especial.
+                    </p>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Massa artesanal fina feita diariamente à base de ovos caipiras e semolina especial.
-                  </p>
-                </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 text-xs font-geom text-charcoal-muted">
-                  Escolha seu molho predileto abaixo
+                  <div class="mt-2 pt-2 border-t border-gray-200 text-xs font-geom text-charcoal-muted uppercase">
+                    Escolha seu molho predileto abaixo
+                  </div>
                 </div>
               </div>
 
@@ -1183,28 +1201,28 @@
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Sorrentino Recheado</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Sorrentino Recheado</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 95</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Massa recheada artesanal com corações de alcachofra selecionada e queijo provolone curado.
                   </p>
                 </div>
-                <div class="mt-3 pt-2 border-t border-gray-100 text-xs font-geom text-charcoal-muted">
+                <div class="mt-3 pt-2 border-t border-gray-100 text-xs font-geom text-charcoal-muted uppercase">
                   Escolha seu molho predileto abaixo
                 </div>
               </div>
 
             </div>
 
-            <!-- Caixinha de Molhos Disponíveis -->
+            <!-- Box de Molhos -->
             <div class="p-4 border border-gold-border bg-wine-soft/30">
-              <h5 class="font-geom font-bold text-xs uppercase tracking-wider text-charcoal-main mb-2">Molhos Disponíveis para as Massas:</h5>
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-editorial italic text-charcoal-muted">
+              <h5 class="font-geom font-extrabold text-xs uppercase tracking-wider text-charcoal-main mb-2">Molhos Disponíveis:</h5>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-geom font-medium text-charcoal-muted">
                 <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Pomodoro Rústico</div>
-                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Creme Branco com Chorizo</div>
-                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Manteiga com Sálvia Fresca</div>
-                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Ragu de Costela Desfiada</div>
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Creme Branco c/ Chorizo</div>
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Manteiga com Sálvia</div>
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-flame-wine"></span> Ragu de Costela</div>
               </div>
             </div>
 
@@ -1217,24 +1235,25 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">rice_bowl</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">RISOTOS DE AUTOR</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">Arroz Carnaroli</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">Arroz Carnaroli</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
-              <!-- Item: Risoto de Costela com Tomate Cereja -->
-              <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
+              <!-- Item com Foto: Risoto de Costela -->
+              <div class="p-5 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col justify-between">
+                <img src="assets/images/prato-risoto.jpg" alt="Risoto de Costela" class="w-full h-36 object-cover border border-gold-border mb-3 gallery-zoom cursor-pointer" data-full="assets/images/prato-risoto.jpg">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Risoto de Costela</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Risoto de Costela</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 90</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Arroz carnaroli com caldo reduzido de costela desfiada, tomates cereja confitados e queijo grana padano.
                   </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                <div class="mt-3 pt-2 border-t border-gray-200 flex items-center justify-between text-xs font-geom">
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">IPA</span>
                 </div>
               </div>
@@ -1243,15 +1262,15 @@
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Risoto de Alcachofra</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Risoto de Alcachofra</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 90</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Com corações de alcachofra macios, crispy crocante de jamon serrano e finalização perfumada com azeite trufado.
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Com corações de alcachofra macios, crispy crocante de jamon serrano e finalização com azeite trufado.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Cristal</span>
                 </div>
               </div>
@@ -1260,15 +1279,15 @@
               <div class="p-5 border border-gray-100 hover:border-gold-border transition-colors bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-sm sm:text-base uppercase text-charcoal-main">Risoto de Funghi Secci</h4>
+                    <h4 class="font-geom font-extrabold text-sm sm:text-base uppercase text-charcoal-main">Risoto Funghi Secci</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">01p R$ 110</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
-                    Cogumelos funghi secci hidratados em vinho branco e finalizados com lascas generosas e essência de trufa negra.
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
+                    Cogumelos funghi secci hidratados em vinho branco e finalizados com lascas de trufa negra.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Cristal</span>
                 </div>
               </div>
@@ -1283,66 +1302,72 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">dinner_dining</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">GUARNIÇÕES &amp; ACOMPANHAMENTOS</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">11 Porções</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">11 Porções</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <!-- Item com Foto: Parrillada de Legumes -->
+              <div class="p-4 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/prato-legumes.jpg" alt="Parrillada de Legumes" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-legumes.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div class="flex justify-between items-baseline gap-2">
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Parrillada de Legumes</h4>
+                    <span class="font-geom font-extrabold text-base text-aged-gold-dark">R$ 60</span>
+                  </div>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Brócolis, berinjela, abobrinha e cebola roxa tostados no azeite extravirgem.</p>
+                </div>
+              </div>
+
+              <!-- Item com Foto: Creme de Espinafre -->
+              <div class="p-4 border border-gold-border hover:border-flame-wine transition-all bg-surface-low flex flex-col sm:flex-row gap-4">
+                <img src="assets/images/prato-creme-espinafre.jpg" alt="Creme de Espinafre Gratinado" class="w-full sm:w-28 h-28 object-cover border border-gold-border shrink-0 gallery-zoom cursor-pointer" data-full="assets/images/prato-creme-espinafre.jpg">
+                <div class="flex-1 flex flex-col justify-between">
+                  <div class="flex justify-between items-baseline gap-2">
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Creme de Espinafre</h4>
+                    <span class="font-geom font-extrabold text-base text-aged-gold-dark">R$ 35</span>
+                  </div>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Folhas frescas salteadas reduzidas em creme de leite fresco e queijo curado.</p>
+                </div>
+              </div>
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
                 <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Arroz Branco</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 20</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Arroz com Brócolis</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Arroz c/ Brócolis</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 25</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
                 <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Arroz Biro Biro</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 30</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
                 <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Papas Soufle</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 37</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Papas Fritas Clássicas</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Papas Fritas</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 32</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Parrillada de Legumes</span>
-                <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 60</span>
-              </div>
-
-              <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Polenta Frita Crocante</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Polenta Frita</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 30</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Farofa da Casa Especial</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Farofa da Casa</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 20</span>
               </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Batata c/ Blue Cheese</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Batata Blue Cheese</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 30</span>
               </div>
-
-              <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Batata Rústica c/ Alecrim</span>
-                <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 35</span>
-              </div>
-
               <div class="p-3 border border-gray-100 bg-surface-low/40 flex justify-between items-center col-span-2 sm:col-span-1">
-                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Creme de Espinafre</span>
+                <span class="font-geom font-bold text-xs uppercase text-charcoal-main">Batata Rústica Alecrim</span>
                 <span class="font-geom font-bold text-xs text-aged-gold-dark">R$ 35</span>
               </div>
-
             </div>
           </div>
 
@@ -1353,19 +1378,18 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">cake</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">SOBREMESAS &amp; DULCE DE LECHE</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">Doces Típicos</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">Doces Típicos</span>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <!-- Item: Churros -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Churros de Doce de Leite</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Churros de Doce de Leite</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 32</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Churros crocantes servidos com legítimo doce de leite uruguaio cremoso.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Churros crocantes servidos com legítimo doce de leite uruguaio cremoso.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1373,14 +1397,13 @@
                 </div>
               </div>
 
-              <!-- Item: Crepe -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Crepe de Doce de Leite</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Crepe de Doce de Leite</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 32</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Crepe fino caramelizado na chapa recheado com doce de leite morno.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Crepe fino caramelizado na chapa recheado com doce de leite morno.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1388,14 +1411,13 @@
                 </div>
               </div>
 
-              <!-- Item: Cheese Cake -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Cheese Cake de Doce de Leite</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Cheese Cake Doce de Leite</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 37</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Com cobertura de doce de leite artesanal e farofa crocante de castanhas.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Com cobertura de doce de leite artesanal e farofa crocante de castanhas.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1403,25 +1425,23 @@
                 </div>
               </div>
 
-              <!-- Item: Sorvete de Creme -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Sorvete de Creme</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Sorvete de Creme</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 20</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Duas bolas de sorvete artesanal de fava de baunilha.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Duas bolas de sorvete artesanal de fava de baunilha.</p>
                 </div>
               </div>
 
-              <!-- Item: Abacaxi c/ raspas de Limão -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Abacaxi com Raspas de Limão</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Abacaxi com Raspas de Limão</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 20</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Fatias finas de abacaxi fresco marinadas com raspas de limão taiti.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Fatias finas de abacaxi fresco com raspas de limão taiti.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1429,14 +1449,13 @@
                 </div>
               </div>
 
-              <!-- Item: Creme Papaia -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Creme Papaia</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Creme Papaia</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 28</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Papaia batido com sorvete de creme e licor de cassis francês.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Papaia batido com sorvete de creme e licor de cassis francês.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1444,14 +1463,13 @@
                 </div>
               </div>
 
-              <!-- Item: Merengue de Morango -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between sm:col-span-2 lg:col-span-3">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Merengue de Morango</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Merengue de Morango</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 35</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Camadas de morangos frescos, suspiros crocantes e chantilly artesanal aerado.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Camadas de morangos frescos, suspiros crocantes e chantilly artesanal aerado.</p>
                 </div>
                 <div class="mt-3 pt-2 border-t border-gray-100 flex justify-between text-xs font-geom">
                   <span class="text-charcoal-muted">Harmonização:</span>
@@ -1469,44 +1487,42 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">schedule</span>
                 <div>
                   <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">ALMOÇO EXECUTIVO</h3>
-                  <p class="font-editorial italic text-xs text-flame-wine mt-0.5">Segunda a sexta-feira. Acompanha: Salada da Casa, Arroz, Feijão, Fritas ou Legumes</p>
+                  <p class="font-geom font-bold text-xs text-flame-wine mt-0.5 uppercase">Segunda a sexta-feira. Acompanha: Salada, Arroz, Feijão, Fritas ou Legumes</p>
                 </div>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">Segunda a Sexta</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">Segunda a Sexta</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              <!-- Item: Corte Bovino do Dia -->
               <div class="p-5 border border-gold-border/60 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">Corte Bovino do Dia (Sugestão do Chef)</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">Corte Bovino do Dia (Chef)</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 80</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Corte bovino especial grelhado na brasa ao ponto do cliente, guarnecido de prato executivo completo.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">IPA</span>
                 </div>
               </div>
 
-              <!-- Item: 1/2 Galeto -->
               <div class="p-5 border border-gold-border/60 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline gap-2">
-                    <h4 class="font-geom font-bold text-base uppercase text-charcoal-main">1/2 Galeto Primo Canto na Brasa</h4>
+                    <h4 class="font-geom font-extrabold text-base uppercase text-charcoal-main">1/2 Galeto Primo Canto</h4>
                     <span class="font-geom font-extrabold text-base text-aged-gold-dark shrink-0">R$ 75</span>
                   </div>
-                  <p class="font-editorial italic text-xs sm:text-sm text-charcoal-muted mt-1 leading-relaxed">
+                  <p class="font-geom text-xs text-charcoal-muted mt-1 leading-relaxed">
                     Meio galeto temperado com ervas coloniais dourado na brasa, servido com guarnições completas.
                   </p>
                 </div>
                 <div class="mt-4 pt-2 border-t border-gold-border/30 flex items-center justify-between text-xs font-geom">
-                  <span class="text-charcoal-muted">Harmonização:</span>
+                  <span class="text-charcoal-muted uppercase">Harmonização:</span>
                   <span class="font-bold text-flame-wine">Cristal</span>
                 </div>
               </div>
@@ -1521,96 +1537,88 @@
                 <span class="material-symbols-outlined text-flame-wine text-2xl sm:text-3xl">sports_bar</span>
                 <h3 class="font-geom font-extrabold text-lg sm:text-xl tracking-wider uppercase text-charcoal-main">BEBIDAS, CERVEJAS &amp; DIGESTIVOS</h3>
               </div>
-              <span class="font-geom text-xs text-charcoal-muted uppercase">Bar &amp; Cava</span>
+              <span class="font-geom font-bold text-xs text-charcoal-muted uppercase">Bar &amp; Cava</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <!-- Baden Baden -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Cerveja Baden Baden 600ml</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Baden Baden 600ml</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 40</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Estilos: IPA, Golden, Witbier, Cristal ou Peach.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Estilos: IPA, Golden, Witbier, Cristal ou Peach.</p>
                 </div>
               </div>
 
-              <!-- Heineken -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Heineken / Zero (Long Neck)</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Heineken / Zero (Long Neck)</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 15</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Cerveja premium puro malte 330ml.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Cerveja premium puro malte 330ml.</p>
                 </div>
               </div>
 
-              <!-- Patrícia -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Cerveja Patrícia (960ml)</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Cerveja Patrícia (960ml)</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 60</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Tradicional lager uruguaia em garrafa compartilhada.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Tradicional lager uruguaia em garrafa compartilhada.</p>
                 </div>
               </div>
 
-              <!-- Norteña -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Cerveja Norteña (960ml)</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Cerveja Norteña (960ml)</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 60</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Ícone uruguaio refrescante em garrafa grande.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Ícone uruguaio refrescante em garrafa grande.</p>
                 </div>
               </div>
 
-              <!-- Águas Importadas -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">San Pellegrino / Acqua Panna (500ml)</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">San Pellegrino / Acqua Panna</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 30</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Águas minerais italianas de prestígio internacional.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Águas minerais italianas de prestígio internacional 500ml.</p>
                 </div>
               </div>
 
-              <!-- Refrigerantes & Tônicas -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Refrigerantes &amp; Água Mineral</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Refrigerantes &amp; Água</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 8</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Coca-Cola, Guaraná, Sprite, Água c/ gás ou Tônica.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Coca-Cola, Guaraná, Sprite, Água c/ gás ou Tônica.</p>
                 </div>
               </div>
 
-              <!-- Sucos Integrais -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Suco Integral (Laranja, Uva, Tangerina)</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Suco Integral</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 16</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">100% fruta sem adição de açúcares.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">100% fruta (Laranja, Uva ou Tangerina).</p>
                 </div>
               </div>
 
-              <!-- Café / Digestivo -->
               <div class="p-4 border border-gray-100 bg-surface-low/50 flex flex-col justify-between sm:col-span-2">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <h4 class="font-geom font-bold text-sm uppercase text-charcoal-main">Café Espresso / Digestivo</h4>
+                    <h4 class="font-geom font-extrabold text-sm uppercase text-charcoal-main">Café Espresso / Digestivo</h4>
                     <span class="font-geom font-bold text-sm text-aged-gold-dark">R$ 8</span>
                   </div>
-                  <p class="font-editorial italic text-xs text-charcoal-muted mt-1">Grãos nobres moídos na hora com crema densa.</p>
+                  <p class="font-geom text-xs text-charcoal-muted mt-1">Grãos nobres moídos na hora com crema densa.</p>
                 </div>
               </div>
 
@@ -1631,17 +1639,17 @@
           <div class="space-y-3 max-w-2xl">
             <div class="inline-flex items-center gap-2 border-b border-aged-gold pb-1">
               <span class="material-symbols-outlined text-flame-wine text-[20px]">corporate_fare</span>
-              <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">ESTRUTURA &amp; EXPERIÊNCIAS DE MARCA</span>
+              <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">ESTRUTURA &amp; EXPERIÊNCIAS DE MARCA</span>
             </div>
-            <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-              Eventos e <span class="italic text-flame-wine">Concierge VIP</span>
+            <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+              EVENTOS E <span class="text-flame-wine">CONCIERGE VIP</span>
             </h2>
-            <p class="font-editorial text-base sm:text-lg text-charcoal-muted leading-relaxed">
+            <p class="font-geom text-base sm:text-lg text-charcoal-muted leading-relaxed">
               Estrutura premium integrada à natureza da Estrada do Vinho para eventos corporativos, lançamentos automotivos, workshops e celebrações sob medida.
             </p>
           </div>
           <div class="flex items-center gap-3">
-            <a href="#reservas" class="inline-flex items-center justify-center px-6 py-3.5 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-bold text-xs tracking-[0.2em] uppercase shadow transition-all">
+            <a href="#reservas" class="inline-flex items-center justify-center px-6 py-3.5 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-extrabold text-xs tracking-[0.2em] uppercase shadow transition-all">
               Agendar Evento Corporativo
             </a>
           </div>
@@ -1652,23 +1660,23 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-5 space-y-4">
-              <div class="inline-flex items-center gap-2 px-3 py-1 bg-flame-wine/10 border border-flame-wine/30 text-flame-wine font-geom font-bold text-[10px] tracking-[0.2em] uppercase">
+              <div class="inline-flex items-center gap-2 px-3 py-1 bg-flame-wine/10 border border-flame-wine/30 text-flame-wine font-geom font-extrabold text-[10px] tracking-[0.2em] uppercase">
                 CASO DE SUCESSO • LANÇAMENTO AUTOMOTIVO
               </div>
-              <h3 class="font-editorial text-2xl sm:text-3xl lg:text-4xl text-charcoal-main font-normal leading-tight">
-                Experiência Oficial da Marca <span class="text-flame-wine font-semibold">GEELY</span>
+              <h3 class="font-geom font-extrabold text-2xl sm:text-3xl lg:text-4xl text-charcoal-main uppercase leading-tight">
+                EXPERIÊNCIA OFICIAL DA MARCA <span class="text-flame-wine">GEELY</span>
               </h3>
-              <p class="font-editorial text-base text-charcoal-muted leading-relaxed">
+              <p class="font-geom text-base text-charcoal-muted leading-relaxed">
                 O Viejo Papa foi o cenário escolhido para a recepção de imprensa, executivos e convidados VIP da montadora internacional <strong>GEELY</strong>. Com ampla área ao ar livre, mirante arborizado e gastronomia sob brasa viva, proporcionamos uma experiência imersiva inesquecível.
               </p>
               <div class="grid grid-cols-2 gap-4 pt-2 border-t border-gold-border/40 text-xs font-geom">
                 <div>
-                  <span class="text-charcoal-muted uppercase block">Capacidade:</span>
-                  <strong class="text-charcoal-main">Grandes Frotas &amp; Grupos</strong>
+                  <span class="text-charcoal-muted uppercase block font-bold">Capacidade:</span>
+                  <strong class="text-charcoal-main uppercase">Grandes Frotas &amp; Grupos</strong>
                 </div>
                 <div>
-                  <span class="text-charcoal-muted uppercase block">Gastronomia:</span>
-                  <strong class="text-flame-wine">Menu Degustação Personalizado</strong>
+                  <span class="text-charcoal-muted uppercase block font-bold">Gastronomia:</span>
+                  <strong class="text-flame-wine uppercase">Menu Degustação Especial</strong>
                 </div>
               </div>
             </div>
@@ -1701,49 +1709,152 @@
       </div>
     </section>
 
-    <!-- 7. O ESPAÇO / AMBIENTES & EXPERIÊNCIA -->
+    <!-- 7. O ESPAÇO / 12 FOTOS REAIS DO AMBIENTE, DECORAÇÃO & ACONCHEGO -->
     <section id="ambientes" class="py-20 lg:py-28 bg-surface-low border-b border-gold-border">
       <div class="max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">ARQUITETURA &amp; CONFORTO</span>
-          <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-            Os Ambientes do <span class="italic text-flame-wine">Viejo Papa</span>
+          <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">ARQUITETURA, DECORAÇÃO &amp; ACONCHEGO</span>
+          <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+            OS AMBIENTES DO <span class="text-flame-wine">VIEJO PAPA</span>
           </h2>
-          <p class="font-editorial text-base text-charcoal-muted">
-            Salão nobre envidraçado, mirante com vista panorâmica e lareira acolhedora para momentos inesquecíveis.
+          <p class="font-geom text-base text-charcoal-muted">
+            Salão nobre envidraçado, mirante com vista panorâmica, lareira acolhedora, jardins com araucárias e atmosfera acolhedora na Estrada do Vinho.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- GRID COM 12 FOTOS REAIS DO ESPAÇO -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           
-          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white">
-            <div class="h-72 overflow-hidden">
-              <img src="assets/images/salao-principal.jpg" alt="Salão Nobre Viejo Papa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/salao-principal.jpg">
+          <!-- Foto 1 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-salao-principal.jpg" alt="Salão Nobre Principal com Lareira e Lustres" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-salao-principal.jpg">
             </div>
-            <div class="p-6">
-              <h4 class="font-geom font-bold text-base uppercase text-charcoal-main mb-2">Salão Nobre Principal</h4>
-              <p class="font-editorial text-sm text-charcoal-muted">Espaço climatizado com mesas amplas, iluminação cênica e atmosfera intimista.</p>
-            </div>
-          </div>
-
-          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white">
-            <div class="h-72 overflow-hidden">
-              <img src="assets/images/salao-mirante.jpg" alt="Mirador Panorâmico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/salao-mirante.jpg">
-            </div>
-            <div class="p-6">
-              <h4 class="font-geom font-bold text-base uppercase text-charcoal-main mb-2">Mirante com Vista Panorâmica</h4>
-              <p class="font-editorial text-sm text-charcoal-muted">Vista privilegiada do pôr do sol e da paisagem, ideal para jantares românticos e celebrações.</p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Salão Nobre Principal</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Ambiente climatizado, pé-direito imponente e iluminação acolhedora.</p>
             </div>
           </div>
 
-          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white">
-            <div class="h-72 overflow-hidden">
-              <img src="assets/images/parrilla-fogo.jpg" alt="Parrilla Aberta ao Vivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/parrilla-fogo.jpg">
+          <!-- Foto 2 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-varanda-mirante.jpg" alt="Mirador Panorâmico Envidraçado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-varanda-mirante.jpg">
             </div>
-            <div class="p-6">
-              <h4 class="font-geom font-bold text-base uppercase text-charcoal-main mb-2">Show da Brasa Viva</h4>
-              <p class="font-editorial text-sm text-charcoal-muted">Acompanhe de perto o trabalho do nosso mestre parrillero preparando os cortes em brasa aberta.</p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Mirante com Vista Panorâmica</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Vista privilegiada para o pôr do sol e para os vinhedos de São Roque.</p>
+            </div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-detalhes-madeira.jpg" alt="Detalhes de Madeira e Decoração Rústica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-detalhes-madeira.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Aconchego &amp; Madeira Maciça</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Mobiliário nobre trabalhado à mão com design rústico-contemporâneo.</p>
+            </div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-fachada-externa.jpg" alt="Fachada Externa na Estrada do Vinho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-fachada-externa.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Fachada &amp; Recepção</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Entrada imponente com acesso direto na Estrada do Vinho Km 4,5.</p>
+            </div>
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-mesas-panoramicas.jpg" alt="Mesas Panorâmicas com Toalhas e Taças" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-mesas-panoramicas.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Mesas Panorâmicas</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Disposição ampla que preserva a privacidade e o conforto dos clientes.</p>
+            </div>
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-arquitetura-rustica.jpg" alt="Arquitetura Serrana do Viejo Papa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-arquitetura-rustica.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Arquitetura Serrana</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Ambientes integrados que remetem às clássicas estâncias do Uruguai.</p>
+            </div>
+          </div>
+
+          <!-- Foto 7 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-decoracao-aconchego.jpg" alt="Decoração e Toques Artísticos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-decoracao-aconchego.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Decoração &amp; Obras de Arte</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Quadros originais e elementos da cultura gaúcha e platina espalhados pela casa.</p>
+            </div>
+          </div>
+
+          <!-- Foto 8 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-iluminacao-cenica.jpg" alt="Iluminação Cênica Intimista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-iluminacao-cenica.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Iluminação Cênica Intimista</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Luzes quentes projetadas para momentos memoráveis e jantares a dois.</p>
+            </div>
+          </div>
+
+          <!-- Foto 9 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-terraco-araucarias.jpg" alt="Terraço com Vista para as Araucárias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-terraco-araucarias.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Terraço &amp; Araucárias</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Ar puro da serra e contato direto com a natureza preservada ao redor.</p>
+            </div>
+          </div>
+
+          <!-- Foto 10 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-adega-cava.jpg" alt="Adega e Espaço Sommelier" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-adega-cava.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Espaço Sommelier &amp; Cava</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Rótulos premiados repousando nas condições ideais de temperatura.</p>
+            </div>
+          </div>
+
+          <!-- Foto 11 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-mesas-jardim.jpg" alt="Mesas ao Ar Livre no Jardim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-mesas-jardim.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Jardins &amp; Área Externa</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">Espaço pet friendly e perfeito para tardes ensolaradas em família.</p>
+            </div>
+          </div>
+
+          <!-- Foto 12 -->
+          <div class="border border-gold-border overflow-hidden group shadow-sm bg-white flex flex-col">
+            <div class="h-60 overflow-hidden">
+              <img src="assets/images/espaco-ambiente-noturno.jpg" alt="Atmosfera Noturna Iluminada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-zoom cursor-pointer" data-full="assets/images/espaco-ambiente-noturno.jpg">
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Atmosfera Noturna &amp; Braseiro</h4>
+              <p class="font-geom text-[11px] text-charcoal-muted mt-1">A magia do fogo e das estrelas aquecendo a noite na serra paulista.</p>
             </div>
           </div>
 
@@ -1760,12 +1871,12 @@
           <!-- Informações de Atendimento Oficiais -->
           <div class="lg:col-span-5 space-y-6">
             <div class="inline-flex items-center gap-2 border-b border-aged-gold pb-1">
-              <span class="font-geom font-bold text-xs tracking-[0.25em] uppercase text-flame-wine">ATENDIMENTO OFICIAL</span>
+              <span class="font-geom font-extrabold text-xs tracking-[0.25em] uppercase text-flame-wine">ATENDIMENTO OFICIAL</span>
             </div>
-            <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal-main">
-              Reserve sua Mesa no <span class="italic text-flame-wine">Viejo Papa</span>
+            <h2 class="font-geom font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase text-charcoal-main tracking-tight">
+              RESERVE SUA MESA NO <span class="text-flame-wine">VIEJO PAPA</span>
             </h2>
-            <p class="font-editorial text-base text-charcoal-muted leading-relaxed">
+            <p class="font-geom text-base text-charcoal-muted leading-relaxed">
               Garantimos mesas posicionadas estrategicamente na Estrada do Vinho para que sua experiência gastronômica seja memorável.
             </p>
 
@@ -1775,8 +1886,8 @@
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-flame-wine text-2xl shrink-0 mt-0.5">location_on</span>
                 <div>
-                  <h4 class="font-geom font-bold text-xs uppercase text-charcoal-main">Endereço Oficial</h4>
-                  <p class="font-editorial text-sm text-charcoal-muted leading-snug">
+                  <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Endereço Oficial</h4>
+                  <p class="font-geom text-sm text-charcoal-muted leading-snug">
                     Estrada do Vinho (SPV-077), Km 4,5, nº 4901<br>
                     Canguera, São Roque - SP, CEP 18131-000
                   </p>
@@ -1787,8 +1898,8 @@
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-flame-wine text-2xl shrink-0 mt-0.5">schedule</span>
                 <div>
-                  <h4 class="font-geom font-bold text-xs uppercase text-charcoal-main">Horário de Atendimento</h4>
-                  <p class="font-editorial text-sm text-charcoal-muted leading-snug">
+                  <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Horário de Atendimento</h4>
+                  <p class="font-geom text-sm text-charcoal-muted leading-snug">
                     • <strong>Segunda a Quarta:</strong> das 11:00 às 17:00<br>
                     • <strong>Quinta a Sábado:</strong> das 11:00 às 22:00<br>
                     • <strong>Domingo:</strong> das 11:00 às 17:00
@@ -1800,8 +1911,8 @@
               <div class="flex items-center gap-3">
                 <span class="material-symbols-outlined text-flame-wine text-2xl shrink-0">call</span>
                 <div>
-                  <h4 class="font-geom font-bold text-xs uppercase text-charcoal-main">Telefone &amp; WhatsApp Oficial</h4>
-                  <a href="https://wa.me/5511989239804" target="_blank" rel="noopener" class="font-geom font-bold text-base text-flame-wine hover:underline">
+                  <h4 class="font-geom font-extrabold text-xs uppercase text-charcoal-main">Telefone &amp; WhatsApp Oficial</h4>
+                  <a href="https://wa.me/5511989239804" target="_blank" rel="noopener" class="font-geom font-extrabold text-base text-flame-wine hover:underline">
                     (11) 98923-9804
                   </a>
                 </div>
@@ -1814,27 +1925,27 @@
           <!-- Formulário Interativo de Reserva -->
           <div class="lg:col-span-7 bg-surface-low p-8 sm:p-10 border-2 border-gold-border shadow-xl">
             <h3 class="font-geom font-extrabold text-xl uppercase tracking-wider text-charcoal-main mb-2">Solicitar Reserva VIP</h3>
-            <p class="font-editorial italic text-xs text-charcoal-muted mb-6">Preencha seus dados para confirmação direta via WhatsApp com nosso atendimento.</p>
+            <p class="font-geom text-xs text-charcoal-muted mb-6">Preencha seus dados para confirmação direta via WhatsApp com nosso atendimento.</p>
 
             <form id="reservation-form" class="space-y-5">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Seu Nome Completo</label>
+                  <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Seu Nome Completo</label>
                   <input type="text" id="res-name" required placeholder="Ex: Roberto Silva" class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm">
                 </div>
                 <div>
-                  <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">WhatsApp / Telefone</label>
+                  <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">WhatsApp / Telefone</label>
                   <input type="tel" id="res-phone" required placeholder="(11) 98923-9804" class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 <div>
-                  <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Data</label>
+                  <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Data</label>
                   <input type="date" id="res-date" required class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm">
                 </div>
                 <div>
-                  <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Horário</label>
+                  <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Horário</label>
                   <select id="res-time" required class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm">
                     <option value="12:00">12:00 (Almoço)</option>
                     <option value="13:30">13:30 (Almoço)</option>
@@ -1844,7 +1955,7 @@
                   </select>
                 </div>
                 <div>
-                  <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Pessoas</label>
+                  <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Pessoas</label>
                   <select id="res-guests" required class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm">
                     <option value="2">2 Pessoas</option>
                     <option value="4">4 Pessoas</option>
@@ -1855,11 +1966,11 @@
               </div>
 
               <div>
-                <label class="block font-geom font-bold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Preferência de Ambiente / Observações Especiais</label>
+                <label class="block font-geom font-extrabold text-[11px] uppercase tracking-wider text-charcoal-main mb-1.5">Preferência de Ambiente / Observações</label>
                 <textarea id="res-notes" rows="2" placeholder="Ex: Mesa próxima ao mirante, comemoração de aniversário, evento corporativo..." class="w-full px-4 py-3 bg-white border border-gold-border focus:border-flame-wine focus:ring-1 focus:ring-flame-wine outline-none font-geom text-sm"></textarea>
               </div>
 
-              <button type="submit" class="w-full py-4 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-bold text-xs tracking-[0.25em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.35)] transition-all cursor-pointer">
+              <button type="submit" class="w-full py-4 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-extrabold text-xs tracking-[0.25em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.35)] transition-all cursor-pointer">
                 Confirmar Solicitação de Reserva
               </button>
             </form>
@@ -1879,46 +1990,47 @@
         <!-- Logo & Apresentação -->
         <div class="space-y-4">
           <img src="assets/logo/logo-dark.png" alt="Viejo Papa" class="h-10 w-auto">
-          <p class="font-editorial text-sm text-charcoal-muted leading-relaxed">
+          <p class="font-geom text-sm text-charcoal-muted leading-relaxed">
             A autêntica parrilla uruguaia e cava exclusiva em uma atmosfera acolhedora e sofisticada na Estrada do Vinho.
           </p>
         </div>
 
         <!-- Links Rápidos -->
         <div>
-          <h4 class="font-geom font-bold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Navegação</h4>
-          <ul class="space-y-2 font-geom text-xs text-charcoal-muted uppercase">
+          <h4 class="font-geom font-extrabold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Navegação</h4>
+          <ul class="space-y-2 font-geom font-bold text-xs text-charcoal-muted uppercase">
             <li><a href="#inicio" class="hover:text-flame-wine transition-colors">Início</a></li>
             <li><a href="#sobre" class="hover:text-flame-wine transition-colors">Sobre Nós</a></li>
             <li><a href="#destaques" class="hover:text-flame-wine transition-colors">Destaques da Brasa</a></li>
             <li><a href="#cava" class="hover:text-flame-wine transition-colors">Carta de Vinhos</a></li>
             <li><a href="#cardapio" class="hover:text-flame-wine transition-colors">Cardápio Completo</a></li>
-            <li><a href="#eventos" class="hover:text-flame-wine transition-colors">Eventos &amp; Experiências</a></li>
+            <li><a href="#eventos" class="hover:text-flame-wine transition-colors">Eventos &amp; GEELY</a></li>
+            <li><a href="#ambientes" class="hover:text-flame-wine transition-colors">O Espaço</a></li>
             <li><a href="#reservas" class="hover:text-flame-wine transition-colors">Reservas VIP</a></li>
           </ul>
         </div>
 
         <!-- Horários Oficiais -->
         <div>
-          <h4 class="font-geom font-bold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Funcionamento</h4>
-          <ul class="space-y-2 font-editorial text-xs text-charcoal-muted">
-            <li><strong class="font-geom text-charcoal-main uppercase">Segunda a Quarta:</strong> 11:00 às 17:00</li>
-            <li><strong class="font-geom text-charcoal-main uppercase">Quinta a Sábado:</strong> 11:00 às 22:00</li>
-            <li><strong class="font-geom text-charcoal-main uppercase">Domingo:</strong> 11:00 às 17:00</li>
+          <h4 class="font-geom font-extrabold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Funcionamento</h4>
+          <ul class="space-y-2 font-geom text-xs text-charcoal-muted">
+            <li><strong class="font-geom font-extrabold text-charcoal-main uppercase">Segunda a Quarta:</strong> 11:00 às 17:00</li>
+            <li><strong class="font-geom font-extrabold text-charcoal-main uppercase">Quinta a Sábado:</strong> 11:00 às 22:00</li>
+            <li><strong class="font-geom font-extrabold text-charcoal-main uppercase">Domingo:</strong> 11:00 às 17:00</li>
           </ul>
         </div>
 
         <!-- Localização & Contato Oficial -->
         <div>
-          <h4 class="font-geom font-bold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Contato Oficial</h4>
-          <p class="font-editorial text-xs text-charcoal-muted mb-2">
+          <h4 class="font-geom font-extrabold text-xs uppercase tracking-wider text-charcoal-main mb-4 border-b border-gold-border pb-2">Contato Oficial</h4>
+          <p class="font-geom text-xs text-charcoal-muted mb-2">
             Estrada do Vinho (SPV-077), Km 4,5, nº 4901<br>
             Canguera, São Roque - SP
           </p>
-          <p class="font-geom font-bold text-xs text-flame-wine mb-4">
+          <p class="font-geom font-extrabold text-xs text-flame-wine mb-4">
             WhatsApp: (11) 98923-9804
           </p>
-          <a href="https://instagram.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 border border-gold-border font-geom font-bold text-xs uppercase text-charcoal-main hover:bg-flame-wine hover:text-white transition-all">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 border border-gold-border font-geom font-extrabold text-xs uppercase text-charcoal-main hover:bg-flame-wine hover:text-white transition-all">
             <span class="material-symbols-outlined text-[16px]">photo_camera</span>
             @viejopapa.oficial
           </a>
@@ -1926,9 +2038,9 @@
 
       </div>
 
-      <div class="pt-8 border-t border-gold-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-geom text-charcoal-muted">
+      <div class="pt-8 border-t border-gold-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-geom font-bold text-charcoal-muted uppercase">
         <p>© 2026 Viejo Papa Parrilla &amp; Cava. Todos os direitos reservados.</p>
-        <p class="text-aged-gold-dark font-medium">Estrada do Vinho • São Roque / SP</p>
+        <p class="text-aged-gold-dark font-extrabold">Estrada do Vinho • São Roque / SP</p>
       </div>
     </div>
   </footer>
