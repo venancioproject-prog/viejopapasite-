@@ -74,8 +74,8 @@ body {
 
 @media (max-width: 768px) {
   .hero-video {
-    opacity: 0.63;
-    filter: brightness(0.98) contrast(1.10);
+    opacity: 0.85;
+    filter: brightness(0.85) contrast(1.10);
   }
 }
 
@@ -88,11 +88,11 @@ body {
 
 @media (max-width: 768px) {
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.40) 35%, rgba(255, 255, 255, 0.70) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.75) 100%);
   }
 }
 
-/* Tipografia Heroica com Contraste de Luxo (Sem caixas ou blocos opacos) */
+/* Tipografia Heroica com Contraste Perfeito */
 .hero-title {
   text-shadow: 0 0 12px rgba(255, 255, 255, 1), 0 0 24px rgba(255, 255, 255, 0.95), 0 1px 3px rgba(255, 255, 255, 1);
 }
@@ -102,18 +102,33 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.48) 35%, rgba(255, 255, 255, 0.75) 100%);
+  .hero-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.9);
   }
   
-  .hero-title {
-    text-shadow: 0 0 8px #FFFFFF, 0 0 16px #FFFFFF, 0 0 28px rgba(255, 255, 255, 0.98), 0 1px 3px #FFFFFF;
+  .hero-title span.text-flame-wine {
+    color: #E63946 !important;
+  }
+  
+  .hero-title span.text-aged-gold-dark {
+    color: #E5C365 !important;
   }
   
   .hero-subtext {
-    font-weight: 500 !important;
-    color: #111111 !important;
-    text-shadow: 0 0 6px #FFFFFF, 0 0 14px #FFFFFF, 0 0 22px rgba(255, 255, 255, 1), 0 1px 2px #FFFFFF;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 3px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-badge {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(201, 168, 76, 0.6) !important;
+  }
+
+  .hero-badge span.text-charcoal-main {
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   }
 }
 
