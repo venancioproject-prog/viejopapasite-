@@ -69,13 +69,13 @@ body {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.92) contrast(1.02);
-  opacity: 0.35;
+  opacity: 0.38;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.82) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.72) 50%, rgba(255, 255, 255, 0.84) 100%);
   z-index: 1;
 }
 
