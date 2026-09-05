@@ -53,7 +53,7 @@ body {
   scrollbar-color: #A01553 #FFFFFF;
 }
 
-/* Hero Background Video */
+/* Hero Background Video com Película Escura Translúcida 50% para Luxo & Contraste */
 .hero-video-container {
   position: absolute;
   top: 0;
@@ -68,23 +68,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.88) contrast(1.05);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0.30) 100%);
+  background: rgba(10, 10, 10, 0.52);
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.40) 45%, rgba(255, 255, 255, 0.75) 100%);
-  }
-  .hero-video {
-    filter: brightness(0.95) contrast(1.05);
-  }
 }
 
 /* Glassmorphism Header */

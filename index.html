@@ -105,10 +105,10 @@
   <!-- MAIN CONTAINER COM RESPIRO SUPERIOR ADEQUADO (pt-24 lg:pt-28) -->
   <main class="w-full pt-20 lg:pt-24" id="inicio">
 
-    <!-- 1. HERO BANNER COM VÍDEO INSTITUCIONAL OFICIAL E TIPOGRAFIA DE LUXO -->
-    <section class="relative w-full overflow-hidden bg-white border-b border-gold-border min-h-[85vh] flex items-center">
+    <!-- 1. HERO BANNER CINEMATOGRÁFICO DE ALTO PADRÃO (LUXO & CONTRASTE) -->
+    <section class="relative w-full overflow-hidden bg-black min-h-[85vh] sm:min-h-[88vh] flex items-center justify-center text-center">
       
-      <!-- Video Background Oficial com Nitidez Aprimorada no Mobile -->
+      <!-- Video Background Oficial com Overlay Escuro 50% -->
       <div class="hero-video-container">
         <video autoplay muted loop playsinline poster="assets/images/hero-bg.jpg" class="hero-video">
           <source src="assets/videos/institucional-viejo-papa.mp4" type="video/mp4">
@@ -117,40 +117,36 @@
         <div class="hero-overlay"></div>
       </div>
 
-      <div class="relative z-10 max-w-max-width-content mx-auto px-gutter-mobile lg:px-gutter-desktop py-12 lg:py-20 flex flex-col justify-center w-full">
-        <div class="max-w-4xl flex flex-col gap-6">
-          
-          <!-- Selo / Badge Superior com Fundo Branco Translúcido -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 border border-gold-border bg-white/95 backdrop-blur-md self-start shadow-sm">
-            <span class="w-2.5 h-2.5 rounded-full bg-flame-wine animate-pulse"></span>
-            <span class="font-geom font-normal text-[11px] tracking-[0.25em] uppercase text-charcoal-main">TRADIÇÃO URUGUAIA &amp; ALTA GASTRONOMIA</span>
-          </div>
-
-          <!-- Título Heroico Especial com Tipografia Nobre & Fluida (Cinzel & Cormorant) -->
-          <h1 class="font-geom text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.18] text-charcoal-main tracking-[0.12em] uppercase">
-            O FOGO SAGRADO DA <span class="text-flame-wine font-normal">PARRILLA URUGUAIA</span> &amp; A EXCLUSIVIDADE DA <span class="text-aged-gold-dark font-normal">NOSSA CAVA</span>
-          </h1>
-
-          <!-- Descrição de Posicionamento -->
-          <p class="font-geom font-light text-base sm:text-lg lg:text-xl text-charcoal-muted leading-relaxed max-w-2xl bg-white/70 sm:bg-transparent backdrop-blur-xs sm:backdrop-blur-none p-3 sm:p-0 rounded">
-            Cortes nobres sob o calor da lenha, queijos fundidos, massas artesanais, experiências para grandes marcas, casamentos inesquecíveis e uma curadoria impecável de rótulos internacionais na Estrada do Vinho.
-          </p>
-
-          <!-- Botões de Ação Hero -->
-          <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#cardapio" class="inline-flex items-center justify-center px-8 py-4 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-medium text-xs tracking-[0.22em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.35)] transition-all duration-300">
-              Ver Cardápio Completo
-            </a>
-            <a href="#cava" class="inline-flex items-center justify-center px-8 py-4 border-2 border-aged-gold text-charcoal-main hover:bg-aged-gold hover:text-white font-geom font-medium text-xs tracking-[0.22em] uppercase transition-all duration-300 bg-white/90 backdrop-blur-sm">
-              Conhecer a Cava
-            </a>
-            <a href="#eventos" class="inline-flex items-center gap-2 px-6 py-4 text-charcoal-main hover:text-flame-wine font-geom font-normal text-xs tracking-[0.18em] uppercase transition-colors bg-white/80 sm:bg-transparent backdrop-blur-xs">
-              <span class="material-symbols-outlined text-[18px] text-flame-wine">corporate_fare</span>
-              Eventos &amp; Casamentos
-            </a>
-          </div>
-
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 flex flex-col items-center justify-center gap-6 text-white">
+        
+        <!-- Tagline de Alta Gastronomia -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 border border-aged-gold/50 bg-black/40 backdrop-blur-sm shadow-sm rounded-full">
+          <span class="w-2 h-2 rounded-full bg-flame-wine animate-pulse"></span>
+          <span class="font-geom font-normal text-[10px] sm:text-[11px] tracking-[0.24em] uppercase text-aged-gold">
+            PARRILLA URUGUAIA &amp; CAVA INTERNACIONAL
+          </span>
         </div>
+
+        <!-- Título Principal de Abertura Elegante, Fluido e Limpo -->
+        <h1 class="font-geom font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.14em] uppercase leading-tight sm:leading-snug max-w-3xl drop-shadow-md">
+          CORTES NOBRES COM <br class="hidden sm:inline"><span class="text-flame-wine font-normal">ALMA SUL-AMERICANA</span>
+        </h1>
+
+        <!-- Subtítulo Flutuante Sem Caixas Opacas Poluídas -->
+        <p class="font-geom font-light text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl drop-shadow">
+          A reverência ao fogo de lenha, cortes selecionados de raças nobres e a mais ampla carta de vinhos finos na Estrada do Vinho em São Roque.
+        </p>
+
+        <!-- Apenas Dois Botões Principais Refinados & Bem Espaçados -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 w-full sm:w-auto">
+          <a href="#cardapio" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-flame-wine hover:bg-flame-wine-hover text-white font-geom font-medium text-xs tracking-[0.22em] uppercase shadow-[0_4px_20px_rgba(160,21,83,0.4)] transition-all duration-300">
+            Ver Cardápio
+          </a>
+          <a href="#reservas" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border border-white/80 hover:border-aged-gold text-white hover:bg-white/10 font-geom font-medium text-xs tracking-[0.22em] uppercase backdrop-blur-sm transition-all duration-300">
+            Reservar Mesa
+          </a>
+        </div>
+
       </div>
     </section>
 
