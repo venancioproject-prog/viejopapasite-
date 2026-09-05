@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `_Enviado através do site oficial do Viejo Papa._`
       );
 
-      const whatsappUrl = `https://wa.me/5511999998888?text=${msg}`;
+      const whatsappUrl = `https://wa.me/5511989239804?text=${msg}`;
       window.open(whatsappUrl, '_blank');
     });
   }
