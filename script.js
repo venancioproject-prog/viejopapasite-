@@ -1,5 +1,4 @@
 // script.js - Viejo Papa Parrilla & Cava
-
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -20,13 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Sticky Header Shadow on Scroll
   const header = document.querySelector('header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header.classList.add('shadow-md');
-    } else {
-      header.classList.remove('shadow-md');
-    }
-  });
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('shadow-md');
+      } else {
+        header.classList.remove('shadow-md');
+      }
+    });
+  }
 
   // 3. Menu Tabs Filtering
   const tabButtons = document.querySelectorAll('.menu-tab-btn');
@@ -34,56 +35,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
+      // Toggle button styles
       tabButtons.forEach(b => {
-        b.classList.remove('bg-flame-wine', 'text-white', 'border-flame-wine');
-        b.classList.add('bg-surface-pure', 'text-charcoal-main', 'border-gold-border');
+        b.classList.remove('active', 'bg-flame-wine', 'text-white');
+        b.classList.add('bg-white', 'text-charcoal-muted');
       });
-      btn.classList.add('bg-flame-wine', 'text-white', 'border-flame-wine');
-      btn.classList.remove('bg-surface-pure', 'text-charcoal-main', 'border-gold-border');
+      btn.classList.add('active', 'bg-flame-wine', 'text-white');
+      btn.classList.remove('bg-white', 'text-charcoal-muted');
 
-      const targetTab = btn.getAttribute('data-tab');
+      const target = btn.getAttribute('data-target') || btn.getAttribute('data-tab');
       menuCategories.forEach(panel => {
-        if (targetTab === 'all' || panel.getAttribute('data-category') === targetTab) {
-          panel.classList.remove('hidden');
-          panel.classList.add('animate-fade-in');
+        const cat = panel.getAttribute('data-category');
+        if (target === 'all' || cat === target) {
+          panel.style.display = 'block';
         } else {
-          panel.classList.add('hidden');
-          panel.classList.remove('animate-fade-in');
+          panel.style.display = 'none';
         }
       });
     });
   });
 
   // 4. Image Lightbox
-  const lightbox = document.getElementById('lightbox');
+  const lightboxModal = document.getElementById('lightbox-modal');
   const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
   const lightboxClose = document.getElementById('lightbox-close');
   const clickableImages = document.querySelectorAll('.gallery-zoom');
 
   clickableImages.forEach(img => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => {
-      const src = img.getAttribute('data-full') || img.src;
-      const alt = img.getAttribute('alt') || 'Viejo Papa Parrilla';
-      if (lightbox && lightboxImg) {
-        lightboxImg.src = src;
-        if (lightboxCaption) lightboxCaption.textContent = alt;
-        lightbox.classList.add('active');
+      const fullSrc = img.getAttribute('data-full') || img.src;
+      if (lightboxModal && lightboxImg) {
+        lightboxImg.src = fullSrc;
+        lightboxModal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
       }
     });
   });
 
-  if (lightboxClose && lightbox) {
+  if (lightboxClose && lightboxModal) {
     lightboxClose.addEventListener('click', () => {
-      lightbox.classList.remove('active');
+      lightboxModal.classList.add('hidden');
       document.body.style.overflow = '';
     });
 
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        lightbox.classList.remove('active');
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        lightboxModal.classList.add('hidden');
         document.body.style.overflow = '';
       }
     });
@@ -94,39 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
   if (reservationForm) {
     reservationForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const nome = document.getElementById('nome')?.value || '';
-      const telefone = document.getElementById('telefone')?.value || '';
-      const convidados = document.getElementById('convidados')?.value || '';
-      const data = document.getElementById('data')?.value || '';
-      const horario = document.getElementById('horario')?.value || '';
-      const obs = document.getElementById('obs')?.value || 'Nenhuma';
+      const nome = document.getElementById('res-name')?.value || '';
+      const telefone = document.getElementById('res-phone')?.value || '';
+      const convidados = document.getElementById('res-guests')?.value || '2';
+      const data = document.getElementById('res-date')?.value || '';
+      const horario = document.getElementById('res-time')?.value || '';
+      const obs = document.getElementById('res-notes')?.value || 'Sem observações adicionais.';
 
-      const msg = *SOLICITAÇÃO DE RESERVA VIP - VIEJO PAPA PARRILLA & CAVA*%0A%0A +
-        👤 *Titular:* %0A +
-        📱 *WhatsApp:* %0A +
-        👥 *Pessoas:* %0A +
-        📅 *Data:* %0A +
-        ⏰ *Horário:* %0A +
-        🍷 *Observações / Preferências:* %0A%0A +
-        _Enviado através do site oficial Viejo Papa._;
+      const msg = encodeURIComponent(
+        `*SOLICITAÇÃO DE RESERVA VIP - VIEJO PAPA PARRILLA & CAVA*\n\n` +
+        `👤 *Titular:* ${nome}\n` +
+        `📱 *WhatsApp:* ${telefone}\n` +
+        `👥 *Pessoas:* ${convidados}\n` +
+        `📅 *Data:* ${data}\n` +
+        `⏰ *Horário:* ${horario}\n` +
+        `🍷 *Observações / Preferências:* ${obs}\n\n` +
+        `_Enviado através do site oficial do Viejo Papa._`
+      );
 
-      const whatsappUrl = https://wa.me/551130908877?text=;
-      
-      const formSuccessModal = document.getElementById('form-success-modal');
-      if (formSuccessModal) {
-        formSuccessModal.classList.remove('hidden');
-        document.getElementById('whatsapp-direct-btn')?.setAttribute('href', whatsappUrl);
-      } else {
-        window.open(whatsappUrl, '_blank');
-      }
-    });
-  }
-
-  // Close modal button
-  const closeModalBtn = document.getElementById('close-modal-btn');
-  if (closeModalBtn) {
-    closeModalBtn.addEventListener('click', () => {
-      document.getElementById('form-success-modal')?.classList.add('hidden');
+      const whatsappUrl = `https://wa.me/5511999998888?text=${msg}`;
+      window.open(whatsappUrl, '_blank');
     });
   }
 });
