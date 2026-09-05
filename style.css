@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 :root {
   --color-bg: #FFFFFF;
@@ -29,32 +29,6 @@ body {
   color: var(--color-charcoal);
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6, .heading-geom {
-  font-family: 'Montserrat', sans-serif !important;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-h1 {
-  font-weight: 300 !important;
-  letter-spacing: 0.12em;
-}
-
-h2 {
-  font-weight: 400 !important;
-  letter-spacing: 0.16em;
-}
-
-h3 {
-  font-weight: 400 !important;
-  letter-spacing: 0.14em;
-}
-
-h4, h5, h6 {
-  font-weight: 500 !important;
-  letter-spacing: 0.12em;
 }
 
 /* Custom Scrollbar - Rosa Vinho / Framboesa Oficial */
@@ -94,30 +68,30 @@ h4, h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.85) contrast(1.05);
+  filter: brightness(0.88) contrast(1.05);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.72) 45%, rgba(255, 255, 255, 0.25) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0.30) 100%);
   z-index: 1;
 }
 
 @media (max-width: 768px) {
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.38) 45%, rgba(255, 255, 255, 0.72) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.40) 45%, rgba(255, 255, 255, 0.75) 100%);
   }
   .hero-video {
     filter: brightness(0.95) contrast(1.05);
   }
 }
 
-/* Glassmorphism Classes */
+/* Glassmorphism Header */
 .glass-header {
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .glass-card {
@@ -132,29 +106,6 @@ h4, h5, h6 {
 }
 .img-zoom:hover {
   transform: scale(1.04);
-}
-
-/* Gold Glow */
-.gold-glow {
-  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.18);
-}
-.gold-glow-lg {
-  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.25);
-}
-
-/* Wine Glow */
-.wine-glow {
-  box-shadow: 0 4px 20px rgba(160, 21, 83, 0.35);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.4s ease-out forwards;
 }
 
 /* Lightbox Modal */
